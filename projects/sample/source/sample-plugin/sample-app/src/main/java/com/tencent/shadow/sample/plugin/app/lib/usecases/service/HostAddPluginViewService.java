@@ -1,4 +1,4 @@
-package com.tencent.shadow.sample.plugin.app.lib.usecases.service;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.service;
 
 import android.app.IntentService;
 import android.content.Intent;
@@ -8,9 +8,9 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.tencent.shadow.sample.host.lib.HostAddPluginViewContainer;
-import com.tencent.shadow.sample.host.lib.HostAddPluginViewContainerHolder;
-import com.tencent.shadow.sample.plugin.app.lib.R;
+import com.jpyy001.tools.sample.host.lib.HostAddPluginViewContainer;
+import com.jpyy001.tools.sample.host.lib.HostAddPluginViewContainerHolder;
+import com.jpyy001.tools.sample.plugin.app.lib.R;
 
 public class HostAddPluginViewService extends IntentService {
     private final Handler uiHandler = new Handler(Looper.getMainLooper());

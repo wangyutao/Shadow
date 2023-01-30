@@ -1,6 +1,6 @@
-import com.tencent.shadow.coding.common_jar_settings.AndroidJar
+import com.jpyy001.tools.coding.common_jar_settings.AndroidJar
 
-apply plugin: 'com.tencent.shadow.internal.common-jar-settings'
+apply plugin: 'com.jpyy001.tools.internal.common-jar-settings'
 
 apply plugin: 'kotlin'
 
@@ -17,9 +17,9 @@ compileKotlin {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.tencent.shadow.core:loader'
-    compileOnly 'com.tencent.shadow.core:activity-container'
-    compileOnly 'com.tencent.shadow.core:common'
+    implementation 'com.jpyy001.tools.core:loader'
+    compileOnly 'com.jpyy001.tools.core:activity-container'
+    compileOnly 'com.jpyy001.tools.core:common'
     compileOnly project(':dynamic-host')
     compileOnly project(':dynamic-loader')
     compileOnly files(AndroidJar.ANDROID_JAR_PATH)

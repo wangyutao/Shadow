@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.cases.plugin_main.application_info;
+package com.jpyy001.tools.test.cases.plugin_main.application_info;
 
 import org.junit.Ignore;
 import org.junit.runner.RunWith;

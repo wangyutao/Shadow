@@ -16,11 +16,11 @@
  *
  */
 
-package com.tencent.shadow.sample.manager;
+package com.jpyy001.tools.sample.manager;
 
-import static com.tencent.shadow.sample.constant.Constant.PART_KEY_PLUGIN_ANOTHER_APP;
-import static com.tencent.shadow.sample.constant.Constant.PART_KEY_PLUGIN_BASE;
-import static com.tencent.shadow.sample.constant.Constant.PART_KEY_PLUGIN_MAIN_APP;
+import static com.jpyy001.tools.sample.constant.Constant.PART_KEY_PLUGIN_ANOTHER_APP;
+import static com.jpyy001.tools.sample.constant.Constant.PART_KEY_PLUGIN_BASE;
+import static com.jpyy001.tools.sample.constant.Constant.PART_KEY_PLUGIN_MAIN_APP;
 
 import android.content.Context;
 import android.content.Intent;
@@ -29,9 +29,9 @@ import android.os.RemoteException;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.tencent.shadow.core.manager.installplugin.InstalledPlugin;
-import com.tencent.shadow.dynamic.host.EnterCallback;
-import com.tencent.shadow.sample.constant.Constant;
+import com.jpyy001.tools.core.manager.installplugin.InstalledPlugin;
+import com.jpyy001.tools.dynamic.host.EnterCallback;
+import com.jpyy001.tools.sample.constant.Constant;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -62,11 +62,11 @@ public class SamplePluginManager extends FastPluginManager {
     @Override
     protected String getPluginProcessServiceName(String partKey) {
         if (PART_KEY_PLUGIN_MAIN_APP.equals(partKey)) {
-            return "com.tencent.shadow.sample.host.PluginProcessPPS";
+            return "com.jpyy001.tools.sample.host.PluginProcessPPS";
         } else if (PART_KEY_PLUGIN_BASE.equals(partKey)) {
-            return "com.tencent.shadow.sample.host.PluginProcessPPS";
+            return "com.jpyy001.tools.sample.host.PluginProcessPPS";
         } else if (PART_KEY_PLUGIN_ANOTHER_APP.equals(partKey)) {
-            return "com.tencent.shadow.sample.host.Plugin2ProcessPPS";//在这里支持多个插件
+            return "com.jpyy001.tools.sample.host.Plugin2ProcessPPS";//在这里支持多个插件
         } else {
             //如果有默认PPS，可用return代替throw
             throw new IllegalArgumentException("unexpected plugin load request: " + partKey);
@@ -92,7 +92,7 @@ public class SamplePluginManager extends FastPluginManager {
         Intent pluginIntent = new Intent();
         pluginIntent.setClassName(
                 context.getPackageName(),
-                "com.tencent.shadow.sample.plugin.app.lib.usecases.service.HostAddPluginViewService"
+                "com.jpyy001.tools.sample.plugin.app.lib.usecases.service.HostAddPluginViewService"
         );
         pluginIntent.putExtras(bundle);
         try {

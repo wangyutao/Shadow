@@ -29,11 +29,11 @@ android {
 }
 
 dependencies {
-    implementation 'com.tencent.shadow.dynamic:dynamic-manager'
-    implementation 'com.tencent.shadow.core:manager'
-    implementation 'com.tencent.shadow.dynamic:dynamic-loader'
+    implementation 'com.jpyy001.tools.dynamic:dynamic-manager'
+    implementation 'com.jpyy001.tools.core:manager'
+    implementation 'com.jpyy001.tools.dynamic:dynamic-loader'
     implementation project(':sample-constant')
 
-    compileOnly 'com.tencent.shadow.core:common'
-    compileOnly 'com.tencent.shadow.dynamic:dynamic-host'
+    compileOnly 'com.jpyy001.tools.core:common'
+    compileOnly 'com.jpyy001.tools.dynamic:dynamic-host'
 }

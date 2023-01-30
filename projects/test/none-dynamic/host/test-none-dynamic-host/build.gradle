@@ -8,7 +8,7 @@ android {
         targetSdkVersion project.TARGET_SDK_VERSION
         versionCode project.VERSION_CODE
         versionName project.VERSION_NAME
-        testInstrumentationRunner "com.tencent.shadow.test.none_dynamic.host.CustomAndroidJUnitRunner"
+        testInstrumentationRunner "com.jpyy001.tools.test.none_dynamic.host.CustomAndroidJUnitRunner"
     }
     buildTypes {
         debug {
@@ -42,10 +42,10 @@ dependencies {
     implementation "commons-io:commons-io:$commons_io_android_version"//example复制apk用的.
     implementation "org.slf4j:slf4j-api:$slf4j_version"
 
-    implementation 'com.tencent.shadow.core:common'
+    implementation 'com.jpyy001.tools.core:common'
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.tencent.shadow.core:loader'
-    implementation 'com.tencent.shadow.core:activity-container'
+    implementation 'com.jpyy001.tools.core:loader'
+    implementation 'com.jpyy001.tools.core:activity-container'
     implementation project(':custom-view')
     implementation "androidx.test.espresso:espresso-idling-resource:$espresso_version"
     implementation project(':plugin-use-host-code-lib')

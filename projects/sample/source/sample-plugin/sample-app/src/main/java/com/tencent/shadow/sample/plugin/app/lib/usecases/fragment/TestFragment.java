@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.fragment;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -27,7 +27,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.tencent.shadow.sample.plugin.app.lib.R;
+import com.jpyy001.tools.sample.plugin.app.lib.R;
 
 public class TestFragment extends Fragment {
 

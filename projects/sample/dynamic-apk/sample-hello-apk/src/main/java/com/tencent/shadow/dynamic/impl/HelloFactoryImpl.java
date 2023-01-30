@@ -1,10 +1,10 @@
-package com.tencent.shadow.dynamic.impl;
+package com.jpyy001.tools.dynamic.impl;
 
 import android.content.Context;
 
-import com.tencent.shadow.sample.api.hello.HelloFactory;
-import com.tencent.shadow.sample.api.hello.IHelloWorldImpl;
-import com.tencent.shadow.sample.api.hello.SampleHelloWorld;
+import com.jpyy001.tools.sample.api.hello.HelloFactory;
+import com.jpyy001.tools.sample.api.hello.IHelloWorldImpl;
+import com.jpyy001.tools.sample.api.hello.SampleHelloWorld;
 
 /**
  * @author 林学渊

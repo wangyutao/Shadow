@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity;
+package com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity;
 
 public class UseCaseCategory {
 

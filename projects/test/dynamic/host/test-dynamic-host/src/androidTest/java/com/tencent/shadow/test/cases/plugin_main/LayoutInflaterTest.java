@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_main;
+package com.jpyy001.tools.test.cases.plugin_main;
 
 import android.content.Intent;
 
@@ -38,7 +38,7 @@ public class LayoutInflaterTest extends PluginMainAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         pluginIntent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.context.TestLayoutInflaterActivity"
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.context.TestLayoutInflaterActivity"
         );
         return pluginIntent;
     }
@@ -50,6 +50,6 @@ public class LayoutInflaterTest extends PluginMainAppTest {
 
     @Test
     public void testFactoryClassNameAfterSet() {
-        matchTextWithViewTag("FactoryClassNameAfterSet", "com.tencent.shadow.test.plugin.general_cases.lib.usecases.context.TestFactory2");
+        matchTextWithViewTag("FactoryClassNameAfterSet", "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.context.TestFactory2");
     }
 }

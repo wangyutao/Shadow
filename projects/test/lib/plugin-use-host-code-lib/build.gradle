@@ -1,6 +1,6 @@
 apply plugin: 'java-library'
 
-group 'com.tencent.shadow.test.lib.plugin-use-host-code-lib'
+group 'com.jpyy001.tools.test.lib.plugin-use-host-code-lib'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

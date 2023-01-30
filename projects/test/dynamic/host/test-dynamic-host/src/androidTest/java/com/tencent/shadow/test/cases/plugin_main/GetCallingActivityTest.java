@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_main;
+package com.jpyy001.tools.test.cases.plugin_main;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -31,7 +31,7 @@ import org.junit.Test;
 
 public class GetCallingActivityTest extends PluginMainAppTest {
 
-    public static final String PrintActivityResultActivity = "com.tencent.shadow.test.plugin.general_cases.lib.usecases.activity.PrintActivityResultActivity";
+    public static final String PrintActivityResultActivity = "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.activity.PrintActivityResultActivity";
 
     @Override
     protected Intent getLaunchIntent() {
@@ -41,7 +41,7 @@ public class GetCallingActivityTest extends PluginMainAppTest {
                 packageName,
                 PrintActivityResultActivity
         );
-        pluginIntent.putExtra("targetClassName", "com.tencent.shadow.test.plugin.general_cases.lib.usecases.activity.TestCallingActivity");
+        pluginIntent.putExtra("targetClassName", "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.activity.TestCallingActivity");
         pluginIntent.putExtra("waitForResult", false);
         return pluginIntent;
     }

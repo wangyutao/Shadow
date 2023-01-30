@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.plugin.general_cases.app;
+package com.jpyy001.tools.test.plugin.general_cases.app;
 
 import androidx.test.espresso.Espresso;
 import androidx.test.espresso.assertion.ViewAssertions;

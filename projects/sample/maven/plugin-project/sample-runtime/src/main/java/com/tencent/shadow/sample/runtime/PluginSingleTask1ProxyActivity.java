@@ -1,7 +1,7 @@
-package com.tencent.shadow.sample.runtime;
+package com.jpyy001.tools.sample.runtime;
 
 
-import com.tencent.shadow.core.runtime.container.PluginContainerActivity;
+import com.jpyy001.tools.core.runtime.container.PluginContainerActivity;
 
 public class PluginSingleTask1ProxyActivity extends PluginContainerActivity {
 }

@@ -16,12 +16,12 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.context;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.context;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
 
 public class ActivityContextSubDirTestActivity extends SubDirContextThemeWrapperTestActivity {
     public static class Case extends UseCase {

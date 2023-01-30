@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.gallery.util;
+package com.jpyy001.tools.sample.plugin.app.lib.gallery.util;
 
 
 public class PluginChecker {
@@ -32,7 +32,7 @@ public class PluginChecker {
     public static boolean isPluginMode() {
         if (sPluginMode == null) {
             try {
-                PluginChecker.class.getClassLoader().loadClass("com.tencent.shadow.core.runtime.ShadowApplication");
+                PluginChecker.class.getClassLoader().loadClass("com.jpyy001.tools.core.runtime.ShadowApplication");
                 sPluginMode = true;
             } catch (ClassNotFoundException e) {
                 sPluginMode = false;

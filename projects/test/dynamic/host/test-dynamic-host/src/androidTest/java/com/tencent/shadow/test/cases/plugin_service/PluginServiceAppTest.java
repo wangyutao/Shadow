@@ -16,13 +16,13 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_service;
+package com.jpyy001.tools.test.cases.plugin_service;
 
 import android.app.Activity;
 
-import com.tencent.shadow.test.PluginTest;
-import com.tencent.shadow.test.dynamic.host.BindPluginServiceActivity;
-import com.tencent.shadow.test.lib.constant.Constant;
+import com.jpyy001.tools.test.PluginTest;
+import com.jpyy001.tools.test.dynamic.host.BindPluginServiceActivity;
+import com.jpyy001.tools.test.lib.constant.Constant;
 
 public abstract class PluginServiceAppTest extends PluginTest {
 

@@ -6,7 +6,7 @@ dependencies {
     implementation project(':runtime')
     testImplementation "junit:junit:$junit_version"
     testImplementation "commons-io:commons-io:$commons_io_jvm_version"
-    testImplementation 'com.tencent.shadow.coding:java-build-config'
+    testImplementation 'com.jpyy001.tools.coding:java-build-config'
 }
 
 compileKotlin {

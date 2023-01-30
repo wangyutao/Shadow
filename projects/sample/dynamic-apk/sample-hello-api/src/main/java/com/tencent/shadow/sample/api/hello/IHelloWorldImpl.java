@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.api.hello;
+package com.jpyy001.tools.sample.api.hello;
 
 import android.os.Bundle;
 
@@ -25,7 +25,7 @@ import android.os.Bundle;
  * @email linxy59@mail2.sysu.edu.cn
  * @date 2021/9/6
  * @description 给接口 IHelloWorld 包装一层生命周期
- * 可参考 com.tencent.shadow.sample.apk.hello.DynamicHello 中管理该生命周期
+ * 可参考 com.jpyy001.tools.sample.apk.hello.DynamicHello 中管理该生命周期
  * @usage hello.apk 里可以感知加载的过程
  */
 public interface IHelloWorldImpl extends IHelloWorld {

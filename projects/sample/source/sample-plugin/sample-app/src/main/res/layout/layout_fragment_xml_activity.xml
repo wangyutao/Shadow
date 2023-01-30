@@ -25,7 +25,7 @@
 
 
     <fragment
-        android:name="com.tencent.shadow.sample.plugin.app.lib.usecases.fragment.TestFragment"
+        android:name="com.jpyy001.tools.sample.plugin.app.lib.usecases.fragment.TestFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

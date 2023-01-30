@@ -16,14 +16,14 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.view;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.view;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.tencent.shadow.test.lib.custom_view.TestViewConstructorCacheView;
-import com.tencent.shadow.test.plugin.general_cases.R;
+import com.jpyy001.tools.test.lib.custom_view.TestViewConstructorCacheView;
+import com.jpyy001.tools.test.plugin.general_cases.R;
 
 import dalvik.system.PathClassLoader;
 

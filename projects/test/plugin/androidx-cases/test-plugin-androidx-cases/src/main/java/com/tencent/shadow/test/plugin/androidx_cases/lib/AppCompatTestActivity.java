@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.plugin.androidx_cases.lib;
+package com.jpyy001.tools.test.plugin.androidx_cases.lib;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

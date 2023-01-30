@@ -16,9 +16,9 @@
  *
  */
 
-package com.tencent.shadow.sample.host.api;
+package com.jpyy001.tools.sample.host.api;
 
-import com.tencent.shadow.sample.apk.hello.HelloWorldUpdater;
+import com.jpyy001.tools.sample.apk.hello.HelloWorldUpdater;
 
 import java.io.File;
 import java.util.concurrent.Future;

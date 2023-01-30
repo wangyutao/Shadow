@@ -42,7 +42,7 @@ def generateCode = tasks.register('generateCode') {
                 .addModifiers(Modifier.PUBLIC, Modifier.FINAL)
                 .addField(versionNameField).build()
 
-        JavaFile.builder("com.tencent.shadow.coding.java_build_config", buildConfigClass)
+        JavaFile.builder("com.jpyy001.tools.coding.java_build_config", buildConfigClass)
                 .build().writeTo(new File(project.getBuildDir(), 'generateCode'))
     }
 }

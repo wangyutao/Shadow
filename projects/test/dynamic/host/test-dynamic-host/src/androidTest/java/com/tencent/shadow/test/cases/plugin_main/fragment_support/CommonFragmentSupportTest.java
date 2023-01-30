@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_main.fragment_support;
+package com.jpyy001.tools.test.cases.plugin_main.fragment_support;
 
 import android.content.Intent;
 import android.os.Build;
@@ -26,7 +26,7 @@ import androidx.test.espresso.Espresso;
 import androidx.test.espresso.action.ViewActions;
 import androidx.test.espresso.matcher.ViewMatchers;
 
-import com.tencent.shadow.test.cases.plugin_main.PluginMainAppTest;
+import com.jpyy001.tools.test.cases.plugin_main.PluginMainAppTest;
 
 import org.hamcrest.Matchers;
 import org.junit.Assume;
@@ -46,7 +46,7 @@ abstract class CommonFragmentSupportTest extends PluginMainAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         pluginIntent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment." + getActivityName()
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment." + getActivityName()
         );
         pluginIntent.putExtra("FragmentType", fragmentType());
         return pluginIntent;
@@ -74,32 +74,32 @@ abstract class CommonFragmentSupportTest extends PluginMainAppTest {
     public void attachContext() {
         Assume.assumeTrue(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M);
         matchTextWithViewTag("AttachContextView",
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
     }
 
     @Test
     public void attachActivity() {
         matchTextWithViewTag("AttachActivityView",
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
     }
 
     @Test
     public void getActivity() {
         matchTextWithViewTag("GetActivityView",
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
     }
 
     @Test
     public void getContext() {
         Assume.assumeTrue(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M);
         matchTextWithViewTag("GetContextView",
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
     }
 
     @Test
     public void getHost() {
         Assume.assumeTrue(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M);
         matchTextWithViewTag("GetHostView",
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
     }
 }

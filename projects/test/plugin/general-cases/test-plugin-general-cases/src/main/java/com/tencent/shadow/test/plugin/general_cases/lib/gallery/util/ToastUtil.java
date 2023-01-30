@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.gallery.util;
+package com.jpyy001.tools.test.plugin.general_cases.lib.gallery.util;
 
 import android.content.Context;
 import android.widget.Toast;

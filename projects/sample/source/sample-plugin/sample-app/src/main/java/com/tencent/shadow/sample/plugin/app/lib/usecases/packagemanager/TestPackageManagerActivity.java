@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.packagemanager;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.packagemanager;
 
 import android.content.ComponentName;
 import android.content.pm.ActivityInfo;
@@ -28,9 +28,9 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
-import com.tencent.shadow.sample.plugin.app.lib.R;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.BaseActivity;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.plugin.app.lib.R;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.BaseActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
 
 public class TestPackageManagerActivity extends BaseActivity {
 

@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_main;
+package com.jpyy001.tools.test.cases.plugin_main;
 
 import android.content.Intent;
 
@@ -38,7 +38,7 @@ public class ThemeTest extends PluginMainAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         pluginIntent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.context.TestThemeActivity"
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.context.TestThemeActivity"
         );
         return pluginIntent;
     }
@@ -50,7 +50,7 @@ public class ThemeTest extends PluginMainAppTest {
 
     @Test
     public void testActivityTheme() {
-        matchTextWithViewTag("ActivityThemeName", "com.tencent.shadow.test.hostapp:style/TestPluginTheme");
+        matchTextWithViewTag("ActivityThemeName", "com.jpyy001.tools.test.hostapp:style/TestPluginTheme");
     }
 
 }

@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.provider;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.provider;
 
 import android.Manifest;
 import android.app.Activity;
@@ -31,8 +31,8 @@ import android.support.v4.content.FileProvider;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.tencent.shadow.test.plugin.general_cases.BuildConfig;
-import com.tencent.shadow.test.plugin.general_cases.R;
+import com.jpyy001.tools.test.plugin.general_cases.BuildConfig;
+import com.jpyy001.tools.test.plugin.general_cases.R;
 
 import java.io.File;
 
@@ -68,8 +68,8 @@ public class TestFileProviderActivity extends Activity {
                 if (targetSdkVersion() >= Build.VERSION_CODES.N) {
                     contentUri = FileProvider.getUriForFile(TestFileProviderActivity.this,
                             BuildConfig.APPLICATION_ID + ".general_cases.fileprovider", mFile);
-//                    contentUri = Uri.parse("content://com.tencent.shadow.contentprovider.authority/com.tencent.shadow.test.plugin.general_cases.lib.gallery.fileprovider" +
-//                            "/name/data/data/com.tencent.shadow.test.hostapp/files/images/1548417832706.jpg");
+//                    contentUri = Uri.parse("content://com.jpyy001.tools.contentprovider.authority/com.jpyy001.tools.test.plugin.general_cases.lib.gallery.fileprovider" +
+//                            "/name/data/data/com.jpyy001.tools.test.hostapp/files/images/1548417832706.jpg");
                 } else {
                     contentUri = Uri.fromFile(mFile);
                 }

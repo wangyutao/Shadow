@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_androidx;
+package com.jpyy001.tools.test.cases.plugin_androidx;
 
 import android.content.Intent;
 
@@ -42,7 +42,7 @@ public class LiveDataWithActivityTest extends PluginAndroidxAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         pluginIntent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.androidx_cases.lib.LiveDataWithActivityTestActivity"
+                "com.jpyy001.tools.test.plugin.androidx_cases.lib.LiveDataWithActivityTestActivity"
         );
         return pluginIntent;
     }

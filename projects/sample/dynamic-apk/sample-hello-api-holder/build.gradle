@@ -23,9 +23,9 @@ android {
 
 dependencies {
     // 使用 api 而不是 compileOnly：发布 aar 时会传递依赖，而不是打包进 aar
-    api 'com.tencent.shadow.core:utils'
-    api 'com.tencent.shadow.core:common'
-    api 'com.tencent.shadow.dynamic:dynamic-apk'
+    api 'com.jpyy001.tools.core:utils'
+    api 'com.jpyy001.tools.core:common'
+    api 'com.jpyy001.tools.dynamic:dynamic-apk'
 
     api project(':sample-hello-api')
 }

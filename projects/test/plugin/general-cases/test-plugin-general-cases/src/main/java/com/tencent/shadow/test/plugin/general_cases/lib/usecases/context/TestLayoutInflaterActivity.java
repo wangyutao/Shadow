@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.context;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.context;
 
 import android.app.Activity;
 import android.content.Context;
@@ -28,7 +28,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.tencent.shadow.test.plugin.general_cases.lib.gallery.util.UiUtil;
+import com.jpyy001.tools.test.plugin.general_cases.lib.gallery.util.UiUtil;
 
 public class TestLayoutInflaterActivity extends Activity {
 

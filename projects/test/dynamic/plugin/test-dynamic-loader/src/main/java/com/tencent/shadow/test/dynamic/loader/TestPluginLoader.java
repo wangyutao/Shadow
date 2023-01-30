@@ -16,12 +16,12 @@
  *
  */
 
-package com.tencent.shadow.test.dynamic.loader;
+package com.jpyy001.tools.test.dynamic.loader;
 
 import android.content.Context;
 
-import com.tencent.shadow.core.loader.ShadowPluginLoader;
-import com.tencent.shadow.core.loader.managers.ComponentManager;
+import com.jpyy001.tools.core.loader.ShadowPluginLoader;
+import com.jpyy001.tools.core.loader.managers.ComponentManager;
 
 public class TestPluginLoader extends ShadowPluginLoader {
 

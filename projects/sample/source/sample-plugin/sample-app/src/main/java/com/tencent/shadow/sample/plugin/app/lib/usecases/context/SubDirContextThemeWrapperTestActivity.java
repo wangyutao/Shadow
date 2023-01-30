@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.context;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.context;
 
 import static android.os.Environment.DIRECTORY_MUSIC;
 import static android.os.Environment.DIRECTORY_PODCASTS;
@@ -31,8 +31,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
-import com.tencent.shadow.sample.plugin.app.lib.gallery.BaseActivity;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.util.UiUtil;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.BaseActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.util.UiUtil;
 
 import java.io.File;
 import java.io.FileNotFoundException;

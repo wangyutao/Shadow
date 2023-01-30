@@ -16,12 +16,12 @@
  *
  */
 
-package com.tencent.shadow.test.none_dynamic.host;
+package com.jpyy001.tools.test.none_dynamic.host;
 
 import android.content.Context;
 
-import com.tencent.shadow.core.loader.ShadowPluginLoader;
-import com.tencent.shadow.core.loader.managers.ComponentManager;
+import com.jpyy001.tools.core.loader.ShadowPluginLoader;
+import com.jpyy001.tools.core.loader.managers.ComponentManager;
 
 import org.jetbrains.annotations.NotNull;
 

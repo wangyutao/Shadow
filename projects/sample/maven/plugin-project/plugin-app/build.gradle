@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.tencent.shadow.plugin'
+apply plugin: 'com.jpyy001.tools.plugin'
 
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.tencent.shadow.sample.plugin"
+        applicationId "com.jpyy001.tools.sample.plugin"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
@@ -25,7 +25,7 @@ android {
     // 将插件applicationId设置为和宿主相同
     productFlavors {
         plugin {
-            applicationId "com.tencent.shadow.sample.host"
+            applicationId "com.jpyy001.tools.sample.host"
         }
     }
 }
@@ -33,10 +33,10 @@ android {
 dependencies {
     //Shadow Transform后业务代码会有一部分实际引用runtime中的类
     //如果不以compileOnly方式依赖，会导致其他Transform或者Proguard找不到这些类
-    pluginCompileOnly "com.tencent.shadow.core:runtime:$shadow_version"
+    pluginCompileOnly "com.jpyy001.tools.core:runtime:$shadow_version"
 }
 
-//这段buildscript配置的dependencies是为了apply plugin: 'com.tencent.shadow.plugin'能找到实现
+//这段buildscript配置的dependencies是为了apply plugin: 'com.jpyy001.tools.plugin'能找到实现
 buildscript {
     repositories {
         if (!System.getenv().containsKey("DISABLE_TENCENT_MAVEN_MIRROR")) {
@@ -59,7 +59,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.tencent.shadow.core:gradle-plugin:$shadow_version"
+        classpath "com.jpyy001.tools.core:gradle-plugin:$shadow_version"
     }
 }
 

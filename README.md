@@ -1,6 +1,6 @@
 # Shadow
 
-![Android CI](https://github.com/Tencent/Shadow/workflows/Android%20CI/badge.svg?event=push)
+![Android CI](https://github.com/jpyy001/tools/workflows/Android%20CI/badge.svg?event=push)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ## 介绍

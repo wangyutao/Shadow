@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.provider;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.provider;
 
 import android.app.Activity;
 import android.content.ContentValues;
@@ -30,7 +30,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tencent.shadow.test.plugin.general_cases.R;
+import com.jpyy001.tools.test.plugin.general_cases.R;
 
 public class TestDBContentProviderActivity extends Activity {
 

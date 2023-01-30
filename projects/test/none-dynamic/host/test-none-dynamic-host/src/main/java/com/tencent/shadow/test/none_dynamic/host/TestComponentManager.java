@@ -16,20 +16,20 @@
  *
  */
 
-package com.tencent.shadow.test.none_dynamic.host;
+package com.jpyy001.tools.test.none_dynamic.host;
 
 import android.content.ComponentName;
 
-import com.tencent.shadow.core.loader.infos.ContainerProviderInfo;
-import com.tencent.shadow.core.loader.managers.ComponentManager;
+import com.jpyy001.tools.core.loader.infos.ContainerProviderInfo;
+import com.jpyy001.tools.core.loader.managers.ComponentManager;
 
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
 public class TestComponentManager extends ComponentManager {
-    final private static ComponentName sDefaultContainer = new ComponentName(BuildConfig.APPLICATION_ID, "com.tencent.shadow.test.none_dynamic.host.DefaultContainerActivity");
-    final private static ComponentName sSingleTaskContainer = new ComponentName(BuildConfig.APPLICATION_ID, "com.tencent.shadow.test.none_dynamic.host.SingleTaskContainerActivity");
+    final private static ComponentName sDefaultContainer = new ComponentName(BuildConfig.APPLICATION_ID, "com.jpyy001.tools.test.none_dynamic.host.DefaultContainerActivity");
+    final private static ComponentName sSingleTaskContainer = new ComponentName(BuildConfig.APPLICATION_ID, "com.jpyy001.tools.test.none_dynamic.host.SingleTaskContainerActivity");
     public static final ArrayList<String> sActivities = new ArrayList<>();
 
     @Override
@@ -37,7 +37,7 @@ public class TestComponentManager extends ComponentManager {
         if (!sActivities.contains(componentName.getClassName())) {
             sActivities.add(componentName.getClassName());
         }
-        if (componentName.getClassName().equals("com.tencent.shadow.test.plugin.general_cases.lib.usecases.activity.TestActivityOrientation")) {
+        if (componentName.getClassName().equals("com.jpyy001.tools.test.plugin.general_cases.lib.usecases.activity.TestActivityOrientation")) {
             return sSingleTaskContainer;
         }
         return sDefaultContainer;
@@ -47,7 +47,7 @@ public class TestComponentManager extends ComponentManager {
     @NotNull
     @Override
     public ContainerProviderInfo onBindContainerContentProvider(@NotNull ComponentName pluginContentProvider) {
-        return new ContainerProviderInfo("com.tencent.shadow.core.runtime.container.PluginContainerContentProvider", "com.tencent.shadow.contentprovider.authority");
+        return new ContainerProviderInfo("com.jpyy001.tools.core.runtime.container.PluginContainerContentProvider", "com.jpyy001.tools.contentprovider.authority");
     }
 
 }

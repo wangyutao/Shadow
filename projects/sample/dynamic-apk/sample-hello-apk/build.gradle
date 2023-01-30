@@ -4,7 +4,7 @@ android {
     compileSdkVersion project.COMPILE_SDK_VERSION
     defaultConfig {
         //region hello.apk 演示
-        applicationId 'com.tencent.shadow.sample.hello.host' // 必须保证和 host 的 applicationId 一致
+        applicationId 'com.jpyy001.tools.sample.hello.host' // 必须保证和 host 的 applicationId 一致
         //endregion
         minSdkVersion project.MIN_SDK_VERSION
         targetSdkVersion project.TARGET_SDK_VERSION

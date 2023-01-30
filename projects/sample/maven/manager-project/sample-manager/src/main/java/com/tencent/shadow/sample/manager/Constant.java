@@ -1,4 +1,4 @@
-package com.tencent.shadow.sample.manager;
+package com.jpyy001.tools.sample.manager;
 
 final public class Constant {
     public static final String KEY_PLUGIN_ZIP_PATH = "pluginZipPath";

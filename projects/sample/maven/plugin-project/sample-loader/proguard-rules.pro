@@ -40,16 +40,16 @@
 -keep class org.slf4j.**{*;}
 -dontwarn org.slf4j.impl.**
 
--keep class com.tencent.shadow.dynamic.host.**{*;}
--keep class com.tencent.shadow.dynamic.impl.**{*;}
--keep class com.tencent.shadow.dynamic.loader.**{*;}
--keep class com.tencent.shadow.core.common.**{*;}
--keep class com.tencent.shadow.core.loader.**{*;}
--keep class com.tencent.shadow.core.runtime.**{*;}
+-keep class com.jpyy001.tools.dynamic.host.**{*;}
+-keep class com.jpyy001.tools.dynamic.impl.**{*;}
+-keep class com.jpyy001.tools.dynamic.loader.**{*;}
+-keep class com.jpyy001.tools.core.common.**{*;}
+-keep class com.jpyy001.tools.core.loader.**{*;}
+-keep class com.jpyy001.tools.core.runtime.**{*;}
 
--dontwarn  com.tencent.shadow.dynamic.host.**
--dontwarn  com.tencent.shadow.dynamic.impl.**
--dontwarn  com.tencent.shadow.dynamic.loader.**
--dontwarn  com.tencent.shadow.core.common.**
--dontwarn  com.tencent.shadow.core.loader.**
+-dontwarn  com.jpyy001.tools.dynamic.host.**
+-dontwarn  com.jpyy001.tools.dynamic.impl.**
+-dontwarn  com.jpyy001.tools.dynamic.loader.**
+-dontwarn  com.jpyy001.tools.core.common.**
+-dontwarn  com.jpyy001.tools.core.loader.**
 -dontwarn module-info

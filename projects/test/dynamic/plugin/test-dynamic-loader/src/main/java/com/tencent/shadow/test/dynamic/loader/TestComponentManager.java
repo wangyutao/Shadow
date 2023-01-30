@@ -16,22 +16,22 @@
  *
  */
 
-package com.tencent.shadow.test.dynamic.loader;
+package com.jpyy001.tools.test.dynamic.loader;
 
 import android.content.ComponentName;
 import android.content.Context;
 
-import com.tencent.shadow.core.loader.infos.ContainerProviderInfo;
-import com.tencent.shadow.core.loader.managers.ComponentManager;
+import com.jpyy001.tools.core.loader.infos.ContainerProviderInfo;
+import com.jpyy001.tools.core.loader.managers.ComponentManager;
 
 public class TestComponentManager extends ComponentManager {
 
     /**
      * dynamic-runtime-apk 模块中定义的壳子Activity，需要在宿主AndroidManifest.xml注册
      */
-    private static final String DEFAULT_ACTIVITY = "com.tencent.shadow.test.dynamic.runtime.container.PluginDefaultProxyActivity";
-    private static final String SINGLE_INSTANCE_ACTIVITY = "com.tencent.shadow.test.dynamic.runtime.container.PluginSingleInstance1ProxyActivity";
-    private static final String SINGLE_TASK_ACTIVITY = "com.tencent.shadow.test.dynamic.runtime.container.PluginSingleTask1ProxyActivity";
+    private static final String DEFAULT_ACTIVITY = "com.jpyy001.tools.test.dynamic.runtime.container.PluginDefaultProxyActivity";
+    private static final String SINGLE_INSTANCE_ACTIVITY = "com.jpyy001.tools.test.dynamic.runtime.container.PluginSingleInstance1ProxyActivity";
+    private static final String SINGLE_TASK_ACTIVITY = "com.jpyy001.tools.test.dynamic.runtime.container.PluginSingleTask1ProxyActivity";
 
     private Context context;
 
@@ -62,7 +62,7 @@ public class TestComponentManager extends ComponentManager {
     @Override
     public ContainerProviderInfo onBindContainerContentProvider(ComponentName pluginContentProvider) {
         return new ContainerProviderInfo(
-                "com.tencent.shadow.core.runtime.container.PluginContainerContentProvider",
+                "com.jpyy001.tools.core.runtime.container.PluginContainerContentProvider",
                 context.getPackageName() + ".contentprovider.authority.dynamic");
     }
 

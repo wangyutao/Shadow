@@ -17,7 +17,7 @@
 #}
 
 # 这是供sample-app模块依赖的类
--keep class com.tencent.shadow.sample.plugin.app.lib.gallery.cases.UseCaseManager{*;}
--keep class com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.*{*;}
--keep class com.tencent.shadow.sample.plugin.app.lib.gallery.BaseActivity{*;}
--keep class com.tencent.shadow.sample.plugin.app.lib.gallery.util.*{*;}
+-keep class com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.UseCaseManager{*;}
+-keep class com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.*{*;}
+-keep class com.jpyy001.tools.sample.plugin.app.lib.gallery.BaseActivity{*;}
+-keep class com.jpyy001.tools.sample.plugin.app.lib.gallery.util.*{*;}

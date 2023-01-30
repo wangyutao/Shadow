@@ -16,16 +16,16 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.application;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.application;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
-import com.tencent.shadow.sample.plugin.app.lib.R;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.BaseActivity;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.TestApplication;
+import com.jpyy001.tools.sample.plugin.app.lib.R;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.BaseActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.TestApplication;
 
 public class TestApplicationActivity extends BaseActivity {
 

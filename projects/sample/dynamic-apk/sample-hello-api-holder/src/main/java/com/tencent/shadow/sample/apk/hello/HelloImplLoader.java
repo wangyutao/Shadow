@@ -16,50 +16,50 @@
  *
  */
 
-package com.tencent.shadow.sample.apk.hello;
+package com.jpyy001.tools.sample.apk.hello;
 
 import android.content.Context;
 
-import com.tencent.shadow.core.common.InstalledApk;
-import com.tencent.shadow.dynamic.apk.ApkClassLoader;
-import com.tencent.shadow.dynamic.apk.ChangeApkContextWrapper;
-import com.tencent.shadow.dynamic.apk.ImplLoader;
-import com.tencent.shadow.sample.api.hello.HelloFactory;
-import com.tencent.shadow.sample.api.hello.IHelloWorldImpl;
+import com.jpyy001.tools.core.common.TargetPackage;
+import com.jpyy001.tools.dynamic.apk.ApkClassLoader;
+import com.jpyy001.tools.dynamic.apk.ChangeApkContextWrapper;
+import com.jpyy001.tools.dynamic.apk.ImplLoader;
+import com.jpyy001.tools.sample.api.hello.HelloFactory;
+import com.jpyy001.tools.sample.api.hello.IHelloWorldImpl;
 
 import java.io.File;
 
 final class HelloImplLoader extends ImplLoader {
     //指定实现类在apk中的路径
-    private static final String FACTORY_CLASS_NAME = "com.tencent.shadow.dynamic.impl.HelloFactoryImpl";
+    private static final String FACTORY_CLASS_NAME = "com.jpyy001.tools.dynamic.impl.HelloFactoryImpl";
     private static final String[] REMOTE_PLUGIN_MANAGER_INTERFACES = new String[]
             {
-                    "com.tencent.shadow.core.common",
+                    "com.jpyy001.tools.core.common",
                     //注意将宿主自定义接口加入白名单
-                    "com.tencent.shadow.sample.api.hello"
+                    "com.jpyy001.tools.sample.api.hello"
             };
     final private Context applicationContext;
-    final private InstalledApk installedApk;
+    final private TargetPackage targetPackage;
 
     HelloImplLoader(Context context, File apk) {
         applicationContext = context.getApplicationContext();
         File root = new File(applicationContext.getFilesDir(), "HelloImplLoader");
         File odexDir = new File(root, Long.toString(apk.lastModified(), Character.MAX_RADIX));
         odexDir.mkdirs();
-        installedApk = new InstalledApk(apk.getAbsolutePath(), odexDir.getAbsolutePath(), null);
+        targetPackage = new TargetPackage(apk.getAbsolutePath(), odexDir.getAbsolutePath(), null);
     }
 
     IHelloWorldImpl load() {
         ApkClassLoader apkClassLoader = new ApkClassLoader(
-                installedApk,
+                targetPackage,
                 getClass().getClassLoader(),
-                loadWhiteList(installedApk),
+                loadWhiteList(targetPackage),
                 1
         );
 
         Context contextForApi = new ChangeApkContextWrapper(
                 applicationContext,
-                installedApk.apkFilePath,
+                targetPackage.targetFilePath,
                 apkClassLoader
         );
 

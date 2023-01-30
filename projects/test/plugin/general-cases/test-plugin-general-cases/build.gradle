@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.tencent.shadow.plugin'
+apply plugin: 'com.jpyy001.tools.plugin'
 
 android {
     compileSdkVersion project.COMPILE_SDK_VERSION
@@ -10,7 +10,7 @@ android {
         targetSdkVersion project.TARGET_SDK_VERSION
         versionCode project.VERSION_CODE
         versionName project.VERSION_NAME
-        testInstrumentationRunner "com.tencent.shadow.test.plugin.general_cases.app.CustomAndroidJUnitRunner"
+        testInstrumentationRunner "com.jpyy001.tools.test.plugin.general_cases.app.CustomAndroidJUnitRunner"
     }
 
     buildTypes {
@@ -57,7 +57,7 @@ dependencies {
 
     //Shadow Transform后业务代码会有一部分实际引用runtime中的类
     //如果不以compileOnly方式依赖，会导致其他Transform或者Proguard找不到这些类
-    pluginCompileOnly 'com.tencent.shadow.core:runtime'
+    pluginCompileOnly 'com.jpyy001.tools.core:runtime'
 }
 
 buildscript {
@@ -71,9 +71,9 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.tencent.shadow.core:runtime'
-        classpath 'com.tencent.shadow.core:activity-container'
-        classpath 'com.tencent.shadow.core:gradle-plugin'
+        classpath 'com.jpyy001.tools.core:runtime'
+        classpath 'com.jpyy001.tools.core:activity-container'
+        classpath 'com.jpyy001.tools.core:gradle-plugin'
         classpath "org.javassist:javassist:$javassist_version"
     }
 }
@@ -95,7 +95,7 @@ shadow {
                         buildTask = ':test-plugin-general-cases:assemblePluginDebug'
                         apkPath = 'projects/test/plugin/general-cases/test-plugin-general-cases/build/outputs/apk/plugin/debug/test-plugin-general-cases-plugin-debug.apk'
                         hostWhiteList = ["androidx.test.espresso",//这个包添加是为了general-cases插件中可以访问测试框架的类
-                                         "com.tencent.shadow.test.lib.plugin_use_host_code_lib.interfaces"]//测试插件访问宿主白名单类
+                                         "com.jpyy001.tools.test.lib.plugin_use_host_code_lib.interfaces"]//测试插件访问宿主白名单类
                     }
                     pluginApk4 {
                         businessName = 'plugin-service-for-host'

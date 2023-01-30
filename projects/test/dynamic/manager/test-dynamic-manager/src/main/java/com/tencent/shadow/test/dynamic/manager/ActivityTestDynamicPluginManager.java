@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.dynamic.manager;
+package com.jpyy001.tools.test.dynamic.manager;
 
 import android.content.Context;
 import android.content.Intent;
@@ -24,10 +24,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.tencent.shadow.core.manager.installplugin.InstalledPlugin;
-import com.tencent.shadow.dynamic.host.EnterCallback;
-import com.tencent.shadow.test.lib.constant.Constant;
-import com.tencent.shadow.test.lib.test_manager.TestManager;
+import com.jpyy001.tools.core.manager.installplugin.InstalledPlugin;
+import com.jpyy001.tools.dynamic.host.EnterCallback;
+import com.jpyy001.tools.test.lib.constant.Constant;
+import com.jpyy001.tools.test.lib.test_manager.TestManager;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -57,7 +57,7 @@ public class ActivityTestDynamicPluginManager extends FastPluginManager {
      */
     @Override
     protected String getPluginProcessServiceName() {
-        return "com.tencent.shadow.test.dynamic.host.PluginProcessPPS";
+        return "com.jpyy001.tools.test.dynamic.host.PluginProcessPPS";
     }
 
     @Override

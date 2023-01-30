@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.receiver;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

@@ -1,11 +1,11 @@
-package com.tencent.shadow.sample.plugin.app.lib.usecases.webview;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.webview;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.webkit.WebView;
 
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
 
 public class WebViewActivity extends Activity {
     public static class Case extends UseCase {

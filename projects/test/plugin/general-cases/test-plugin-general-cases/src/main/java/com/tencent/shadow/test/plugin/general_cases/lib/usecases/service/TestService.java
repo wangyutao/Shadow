@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.service;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.service;
 
 import android.app.Service;
 import android.content.Intent;
@@ -25,7 +25,7 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.support.v4.content.LocalBroadcastManager;
 
-import com.tencent.shadow.test.plugin.general_cases.lib.gallery.util.ToastUtil;
+import com.jpyy001.tools.test.plugin.general_cases.lib.gallery.util.ToastUtil;
 
 public class TestService extends Service {
     private IBinder mBinder;

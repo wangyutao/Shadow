@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.none_dynamic.host;
+package com.jpyy001.tools.test.none_dynamic.host;
 
 import android.app.Application;
 import android.os.AsyncTask;
@@ -24,12 +24,12 @@ import android.os.Build;
 import android.os.Parcel;
 import android.os.StrictMode;
 
-import com.tencent.shadow.core.common.InstalledApk;
-import com.tencent.shadow.core.common.LoggerFactory;
-import com.tencent.shadow.core.load_parameters.LoadParameters;
-import com.tencent.shadow.core.loader.ShadowPluginLoader;
-import com.tencent.shadow.core.runtime.container.ContentProviderDelegateProviderHolder;
-import com.tencent.shadow.core.runtime.container.DelegateProviderHolder;
+import com.jpyy001.tools.core.common.TargetPackage;
+import com.jpyy001.tools.core.common.LoggerFactory;
+import com.jpyy001.tools.core.load_parameters.LoadParameters;
+import com.jpyy001.tools.core.loader.ShadowPluginLoader;
+import com.jpyy001.tools.core.runtime.container.ContentProviderDelegateProviderHolder;
+import com.jpyy001.tools.core.runtime.container.DelegateProviderHolder;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -54,11 +54,11 @@ public class HostApplication extends Application {
 
     private ShadowPluginLoader mPluginLoader;
 
-    private final Map<String, InstalledApk> mPluginMap = new HashMap<>();
+    private final Map<String, TargetPackage> mPluginMap = new HashMap<>();
 
     public void loadPlugin(final String partKey, final Runnable completeRunnable) {
-        InstalledApk installedApk = mPluginMap.get(partKey);
-        if (installedApk == null) {
+        TargetPackage targetPackage = mPluginMap.get(partKey);
+        if (targetPackage == null) {
             throw new NullPointerException("partKey == " + partKey);
         }
 
@@ -66,7 +66,7 @@ public class HostApplication extends Application {
             // 插件访问宿主类的白名单
             String[] hostWhiteList = new String[]{
                     "androidx.test.espresso",//这个包添加是为了general-cases插件中可以访问测试框架的类
-                    "com.tencent.shadow.test.lib.plugin_use_host_code_lib.interfaces"//测试插件访问宿主白名单类
+                    "com.jpyy001.tools.test.lib.plugin_use_host_code_lib.interfaces"//测试插件访问宿主白名单类
             };
             LoadParameters loadParameters = new LoadParameters(null,
                     partKey,
@@ -75,10 +75,10 @@ public class HostApplication extends Application {
 
             Parcel parcel = Parcel.obtain();
             loadParameters.writeToParcel(parcel, 0);
-            final InstalledApk plugin = new InstalledApk(
-                    installedApk.apkFilePath,
-                    installedApk.oDexPath,
-                    installedApk.libraryPath,
+            final TargetPackage plugin = new TargetPackage(
+                    targetPackage.targetFilePath,
+                    targetPackage.oDexPath,
+                    targetPackage.libraryPath,
                     parcel.marshall()
             );
             parcel.recycle();
@@ -120,8 +120,8 @@ public class HostApplication extends Application {
         DelegateProviderHolder.setDelegateProvider(loader.getDelegateProviderKey(), loader);
         ContentProviderDelegateProviderHolder.setContentProviderDelegateProvider(loader);
 
-        InstalledApk installedApk = sPluginPrepareBloc.preparePlugin(this.getApplicationContext());
-        mPluginMap.put(PART_MAIN, installedApk);
+        TargetPackage targetPackage = sPluginPrepareBloc.preparePlugin(this.getApplicationContext());
+        mPluginMap.put(PART_MAIN, targetPackage);
     }
 
     private static void detectNonSdkApiUsageOnAndroidP() {

@@ -1,3 +1,3 @@
--keep class com.tencent.shadow.dynamic.impl.**{*;}
+-keep class com.jpyy001.tools.dynamic.impl.**{*;}
 
--keep class com.tencent.shadow.dynamic.loader.**{*;}
+-keep class com.jpyy001.tools.dynamic.loader.**{*;}

@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.context;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.context;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

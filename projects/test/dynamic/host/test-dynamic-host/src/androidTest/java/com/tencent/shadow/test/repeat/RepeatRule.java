@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.repeat;
+package com.jpyy001.tools.test.repeat;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;

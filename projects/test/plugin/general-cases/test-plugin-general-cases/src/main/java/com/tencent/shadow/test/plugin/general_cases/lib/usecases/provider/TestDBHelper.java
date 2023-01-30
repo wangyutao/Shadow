@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.provider;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.provider;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

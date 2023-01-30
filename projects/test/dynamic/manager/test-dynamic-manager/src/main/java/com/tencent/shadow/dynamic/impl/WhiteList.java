@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.dynamic.impl;
+package com.jpyy001.tools.dynamic.impl;
 
 /**
  * 此类包名及类名固定
@@ -27,7 +27,7 @@ public interface WhiteList {
     String[] sWhiteList = new String[]
             {
                     "com.tencent.host.shadow",
-                    "com.tencent.shadow.test.lib.constant",
-                    "com.tencent.shadow.test.lib.test_manager",
+                    "com.jpyy001.tools.test.lib.constant",
+                    "com.jpyy001.tools.test.lib.test_manager",
             };
 }

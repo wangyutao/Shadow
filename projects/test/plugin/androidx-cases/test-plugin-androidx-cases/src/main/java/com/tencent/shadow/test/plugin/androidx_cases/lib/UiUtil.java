@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.androidx_cases.lib;
+package com.jpyy001.tools.test.plugin.androidx_cases.lib;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 

@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.tencent.shadow.sample.runtime"//applicationId不重要
+        applicationId "com.jpyy001.tools.sample.runtime"//applicationId不重要
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
@@ -26,6 +26,6 @@ android {
 }
 
 dependencies {
-    implementation "com.tencent.shadow.core:activity-container:$shadow_version"
+    implementation "com.jpyy001.tools.core:activity-container:$shadow_version"
 }
 

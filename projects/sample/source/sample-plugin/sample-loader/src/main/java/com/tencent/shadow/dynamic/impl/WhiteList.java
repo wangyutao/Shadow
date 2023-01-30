@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.dynamic.impl;
+package com.jpyy001.tools.dynamic.impl;
 
 /**
  * 此类包名及类名固定
@@ -26,6 +26,6 @@ package com.tencent.shadow.dynamic.impl;
 public interface WhiteList {
     String[] sWhiteList = new String[]
             {
-                    "com.tencent.shadow.sample.host.lib",
+                    "com.jpyy001.tools.sample.host.lib",
             };
 }

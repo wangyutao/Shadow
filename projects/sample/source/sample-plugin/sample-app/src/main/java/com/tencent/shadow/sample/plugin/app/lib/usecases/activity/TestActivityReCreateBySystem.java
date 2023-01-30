@@ -16,14 +16,14 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.activity;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.tencent.shadow.sample.plugin.app.lib.R;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.plugin.app.lib.R;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
 
 public class TestActivityReCreateBySystem extends Activity {
 

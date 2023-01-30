@@ -5,8 +5,8 @@ apply plugin: 'kotlin'
 gradlePlugin {
     plugins {
         shadow {
-            id = "com.tencent.shadow.internal.aar-to-jar"
-            implementationClass = "com.tencent.shadow.coding.aar_to_jar_plugin.AarToJarPlugin"
+            id = "com.jpyy001.tools.internal.aar-to-jar"
+            implementationClass = "com.jpyy001.tools.coding.aar_to_jar_plugin.AarToJarPlugin"
         }
     }
 }

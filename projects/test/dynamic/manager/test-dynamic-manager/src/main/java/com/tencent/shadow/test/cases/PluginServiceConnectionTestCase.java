@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.cases;
+package com.jpyy001.tools.test.cases;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -12,11 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.tencent.shadow.dynamic.loader.PluginLoader;
-import com.tencent.shadow.dynamic.loader.PluginServiceConnection;
-import com.tencent.shadow.test.UiUtil;
-import com.tencent.shadow.test.lib.test_manager.SimpleIdlingResource;
-import com.tencent.shadow.test.lib.test_manager.TestManager;
+import com.jpyy001.tools.dynamic.loader.PluginLoader;
+import com.jpyy001.tools.dynamic.loader.PluginServiceConnection;
+import com.jpyy001.tools.test.UiUtil;
+import com.jpyy001.tools.test.lib.test_manager.SimpleIdlingResource;
+import com.jpyy001.tools.test.lib.test_manager.TestManager;
 
 import java.io.BufferedReader;
 import java.io.File;

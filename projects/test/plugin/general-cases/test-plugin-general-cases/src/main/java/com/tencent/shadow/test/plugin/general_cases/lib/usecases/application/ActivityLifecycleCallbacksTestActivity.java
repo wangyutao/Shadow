@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.application;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.application;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,16 +7,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.tencent.shadow.test.plugin.general_cases.lib.gallery.TestApplication;
-import com.tencent.shadow.test.plugin.general_cases.lib.gallery.util.UiUtil;
+import com.jpyy001.tools.test.plugin.general_cases.lib.gallery.TestApplication;
+import com.jpyy001.tools.test.plugin.general_cases.lib.gallery.util.UiUtil;
 
 import java.util.List;
 
 /**
  * 在
- * com.tencent.shadow.test.plugin.general_cases.lib.gallery.TestApplication
+ * com.jpyy001.tools.test.plugin.general_cases.lib.gallery.TestApplication
  * 中注册一个ActivityLifecycleCallbacks，专门监听
- * com.tencent.shadow.test.plugin.general_cases.lib.usecases.application.TestApplicationActivity
+ * com.jpyy001.tools.test.plugin.general_cases.lib.usecases.application.TestApplicationActivity
  * 的生命周期。
  * 然后用这个Activity打印出监听记录进行测试。
  */

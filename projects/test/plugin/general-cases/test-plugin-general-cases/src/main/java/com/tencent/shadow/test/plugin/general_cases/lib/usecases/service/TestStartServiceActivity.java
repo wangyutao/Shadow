@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.service;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.service;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -34,9 +34,9 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 
-import com.tencent.shadow.test.plugin.general_cases.R;
-import com.tencent.shadow.test.plugin.general_cases.lib.gallery.util.ToastUtil;
-import com.tencent.shadow.test.plugin.general_cases.lib.usecases.WithIdlingResourceActivity;
+import com.jpyy001.tools.test.plugin.general_cases.R;
+import com.jpyy001.tools.test.plugin.general_cases.lib.gallery.util.ToastUtil;
+import com.jpyy001.tools.test.plugin.general_cases.lib.usecases.WithIdlingResourceActivity;
 
 public class TestStartServiceActivity extends WithIdlingResourceActivity {
 
@@ -46,7 +46,7 @@ public class TestStartServiceActivity extends WithIdlingResourceActivity {
 
     private TextView mTextView;
 
-    public final static String INTENT_ACTION = "com.tencent.shadow.test.service";
+    public final static String INTENT_ACTION = "com.jpyy001.tools.test.service";
 
     private Handler mHandler = new Handler();
 

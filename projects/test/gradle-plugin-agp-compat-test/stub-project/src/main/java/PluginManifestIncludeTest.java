@@ -3,5 +3,5 @@
  * PluginManifest.java 是否被添加到编译源码路径中了
  */
 public final class PluginManifestIncludeTest {
-    public static final Class DEBUG = com.tencent.shadow.core.manifest_parser.PluginManifest.class;
+    public static final Class DEBUG = com.jpyy001.tools.core.manifest_parser.PluginManifest.class;
 }

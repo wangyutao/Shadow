@@ -1,6 +1,6 @@
-apply plugin: 'com.tencent.shadow.internal.common-jar-settings'
+apply plugin: 'com.jpyy001.tools.internal.common-jar-settings'
 
 dependencies {
-    compileOnly 'com.tencent.shadow.core:common'
+    compileOnly 'com.jpyy001.tools.core:common'
     api project(':dynamic-host')
 }

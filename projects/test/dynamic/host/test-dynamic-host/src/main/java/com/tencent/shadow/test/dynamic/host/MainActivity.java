@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.dynamic.host;
+package com.jpyy001.tools.test.dynamic.host;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,8 +28,8 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.tencent.shadow.test.lib.constant.Constant;
-import com.tencent.shadow.test.lib.custom_view.TestViewConstructorCacheView;
+import com.jpyy001.tools.test.lib.constant.Constant;
+import com.jpyy001.tools.test.lib.custom_view.TestViewConstructorCacheView;
 
 
 public class MainActivity extends Activity {
@@ -65,7 +65,7 @@ public class MainActivity extends Activity {
                 intent.putExtra(Constant.KEY_PLUGIN_PART_KEY, partKey);
                 switch (partKey) {
                     case Constant.PART_KEY_PLUGIN_MAIN_APP:
-                        intent.putExtra(Constant.KEY_ACTIVITY_CLASSNAME, "com.tencent.shadow.test.plugin.general_cases.lib.usecases.application.TestApplicationActivity");
+                        intent.putExtra(Constant.KEY_ACTIVITY_CLASSNAME, "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.application.TestApplicationActivity");
                         break;
                 }
                 startActivity(intent);

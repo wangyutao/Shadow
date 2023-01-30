@@ -16,9 +16,9 @@
  *
  */
 
-package com.tencent.shadow.sample.host.manager;
+package com.jpyy001.tools.sample.host.manager;
 
-import com.tencent.shadow.dynamic.host.PluginManagerUpdater;
+import com.jpyy001.tools.dynamic.host.PluginManagerUpdater;
 
 import java.io.File;
 import java.util.concurrent.Future;

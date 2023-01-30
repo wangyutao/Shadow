@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.tencent.shadow.plugin'
+apply plugin: 'com.jpyy001.tools.plugin'
 
 android {
     compileSdkVersion project.COMPILE_SDK_VERSION
 
     defaultConfig {
-        applicationId 'com.tencent.shadow.test.plugin.particular_cases.plugin_service_for_host'
+        applicationId 'com.jpyy001.tools.test.plugin.particular_cases.plugin_service_for_host'
         minSdkVersion project.MIN_SDK_VERSION
         targetSdkVersion project.TARGET_SDK_VERSION
         versionCode project.VERSION_CODE
@@ -42,7 +42,7 @@ android {
 dependencies {
     //Shadow Transform后业务代码会有一部分实际引用runtime中的类
     //如果不以compileOnly方式依赖，会导致其他Transform或者Proguard找不到这些类
-    pluginCompileOnly 'com.tencent.shadow.core:runtime'
+    pluginCompileOnly 'com.jpyy001.tools.core:runtime'
 }
 
 buildscript {
@@ -56,9 +56,9 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.tencent.shadow.core:runtime'
-        classpath 'com.tencent.shadow.core:activity-container'
-        classpath 'com.tencent.shadow.core:gradle-plugin'
+        classpath 'com.jpyy001.tools.core:runtime'
+        classpath 'com.jpyy001.tools.core:activity-container'
+        classpath 'com.jpyy001.tools.core:gradle-plugin'
         classpath "org.javassist:javassist:$javassist_version"
     }
 }

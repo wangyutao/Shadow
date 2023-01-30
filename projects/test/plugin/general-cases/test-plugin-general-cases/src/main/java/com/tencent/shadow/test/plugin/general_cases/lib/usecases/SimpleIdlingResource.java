@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases;
 
 import androidx.test.espresso.IdlingResource;
 

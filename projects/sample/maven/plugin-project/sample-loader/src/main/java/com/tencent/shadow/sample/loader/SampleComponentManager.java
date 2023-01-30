@@ -1,10 +1,10 @@
-package com.tencent.shadow.sample.loader;
+package com.jpyy001.tools.sample.loader;
 
 import android.content.ComponentName;
 import android.content.Context;
 
-import com.tencent.shadow.core.loader.infos.ContainerProviderInfo;
-import com.tencent.shadow.core.loader.managers.ComponentManager;
+import com.jpyy001.tools.core.loader.infos.ContainerProviderInfo;
+import com.jpyy001.tools.core.loader.managers.ComponentManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +14,9 @@ public class SampleComponentManager extends ComponentManager {
     /**
      * sample-runtime 模块中定义的壳子Activity，需要在宿主AndroidManifest.xml注册
      */
-    private static final String DEFAULT_ACTIVITY = "com.tencent.shadow.sample.runtime.PluginDefaultProxyActivity";
-    private static final String SINGLE_INSTANCE_ACTIVITY = "com.tencent.shadow.sample.runtime.PluginSingleInstance1ProxyActivity";
-    private static final String SINGLE_TASK_ACTIVITY = "com.tencent.shadow.sample.runtime.PluginSingleTask1ProxyActivity";
+    private static final String DEFAULT_ACTIVITY = "com.jpyy001.tools.sample.runtime.PluginDefaultProxyActivity";
+    private static final String SINGLE_INSTANCE_ACTIVITY = "com.jpyy001.tools.sample.runtime.PluginSingleInstance1ProxyActivity";
+    private static final String SINGLE_TASK_ACTIVITY = "com.jpyy001.tools.sample.runtime.PluginSingleTask1ProxyActivity";
 
     private Context context;
 
@@ -47,8 +47,8 @@ public class SampleComponentManager extends ComponentManager {
     @Override
     public ContainerProviderInfo onBindContainerContentProvider(ComponentName pluginContentProvider) {
         return new ContainerProviderInfo(
-                "com.tencent.shadow.runtime.container.PluginContainerContentProvider",
-                "com.tencent.shadow.contentprovider.authority.dynamic");
+                "com.jpyy001.tools.runtime.container.PluginContainerContentProvider",
+                "com.jpyy001.tools.contentprovider.authority.dynamic");
     }
 
 }

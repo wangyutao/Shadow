@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.plugin.general_cases.app;
+package com.jpyy001.tools.test.plugin.general_cases.app;
 
 import android.content.Intent;
 import android.os.Build;
@@ -24,7 +24,7 @@ public class ActivityLifecycleCallbacksTest extends NormalAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         intent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.application.ActivityLifecycleCallbacksTestActivity"
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.application.ActivityLifecycleCallbacksTestActivity"
         );
         ActivityScenario.launch(intent);
     }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="comcom.tencent.shadow.test.hostapp.test">
+    package="comcom.jpyy001.tools.test.hostapp.test">
 
     <!-- Multi-Process Espresso only works on API level 26 and above-->
     <uses-sdk
@@ -14,8 +14,8 @@
     -->
 
     <instrumentation
-        android:name="com.tencent.shadow.test.CustomAndroidJUnitRunner"
-        android:targetPackage="com.tencent.shadow.test.hostapp">
+        android:name="com.jpyy001.tools.test.CustomAndroidJUnitRunner"
+        android:targetPackage="com.jpyy001.tools.test.hostapp">
         <!-- 不设置targetProcesses为*是因为.plugin_service进程在PluginServiceConnectionTest中会被kill掉 -->
 
         <!--

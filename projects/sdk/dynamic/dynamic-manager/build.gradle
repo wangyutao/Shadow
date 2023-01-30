@@ -1,8 +1,8 @@
-apply plugin: 'com.tencent.shadow.internal.common-jar-settings'
+apply plugin: 'com.jpyy001.tools.internal.common-jar-settings'
 
 dependencies {
-    compileOnly 'com.tencent.shadow.core:common'
-    implementation 'com.tencent.shadow.core:manager'
+    compileOnly 'com.jpyy001.tools.core:common'
+    implementation 'com.jpyy001.tools.core:manager'
     implementation project(':dynamic-loader')
     compileOnly project(':dynamic-host')
 }

@@ -16,19 +16,19 @@
  *
  */
 
-package com.tencent.shadow.sample.manager;
+package com.jpyy001.tools.sample.manager;
 
 import android.content.Context;
 import android.os.RemoteException;
 import android.util.Pair;
 
-import com.tencent.shadow.core.common.Logger;
-import com.tencent.shadow.core.common.LoggerFactory;
-import com.tencent.shadow.core.manager.installplugin.InstalledPlugin;
-import com.tencent.shadow.core.manager.installplugin.InstalledType;
-import com.tencent.shadow.core.manager.installplugin.PluginConfig;
-import com.tencent.shadow.dynamic.host.FailedException;
-import com.tencent.shadow.dynamic.manager.PluginManagerThatUseDynamicLoader;
+import com.jpyy001.tools.core.common.Logger;
+import com.jpyy001.tools.core.common.LoggerFactory;
+import com.jpyy001.tools.core.manager.installplugin.InstalledPlugin;
+import com.jpyy001.tools.core.manager.installplugin.InstalledType;
+import com.jpyy001.tools.core.manager.installplugin.PluginConfig;
+import com.jpyy001.tools.dynamic.host.FailedException;
+import com.jpyy001.tools.dynamic.manager.PluginManagerThatUseDynamicLoader;
 
 import org.json.JSONException;
 

@@ -16,9 +16,9 @@
  *
  */
 
-package com.tencent.shadow.test.none_dynamic.host;
+package com.jpyy001.tools.test.none_dynamic.host;
 
-import static com.tencent.shadow.test.none_dynamic.host.HostApplication.PART_MAIN;
+import static com.jpyy001.tools.test.none_dynamic.host.HostApplication.PART_MAIN;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -40,7 +40,7 @@ public class MainActivity extends Activity {
             @Override
             public void run() {
                 Intent pluginIntent = new Intent();
-                pluginIntent.setClassName(getPackageName(), "com.tencent.shadow.test.plugin.general_cases.lib.usecases.activity.TestListActivity");
+                pluginIntent.setClassName(getPackageName(), "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.activity.TestListActivity");
                 pluginIntent.putStringArrayListExtra("activities", TestComponentManager.sActivities);
                 Intent intent = application.getPluginLoader().getMComponentManager().convertPluginActivityIntent(pluginIntent);
                 startActivity(intent);

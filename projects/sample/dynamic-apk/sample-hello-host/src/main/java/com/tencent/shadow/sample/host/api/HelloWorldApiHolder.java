@@ -16,10 +16,10 @@
  *
  */
 
-package com.tencent.shadow.sample.host.api;
+package com.jpyy001.tools.sample.host.api;
 
-import com.tencent.shadow.sample.api.hello.IHelloWorld;
-import com.tencent.shadow.sample.apk.hello.DynamicHello;
+import com.jpyy001.tools.sample.api.hello.IHelloWorld;
+import com.jpyy001.tools.sample.apk.hello.DynamicHello;
 
 import java.io.File;
 

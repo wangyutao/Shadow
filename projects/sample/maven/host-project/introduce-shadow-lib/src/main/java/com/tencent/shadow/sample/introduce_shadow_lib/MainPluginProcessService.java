@@ -1,6 +1,6 @@
-package com.tencent.shadow.sample.introduce_shadow_lib;
+package com.jpyy001.tools.sample.introduce_shadow_lib;
 
-import com.tencent.shadow.dynamic.host.PluginProcessService;
+import com.jpyy001.tools.dynamic.host.PluginProcessService;
 
 /**
  * 一个PluginProcessService（简称PPS）代表一个插件进程。插件进程由PPS启动触发启动。

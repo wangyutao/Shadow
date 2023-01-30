@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.activity;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -24,9 +24,9 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.tencent.shadow.sample.plugin.app.lib.R;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.BaseActivity;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.plugin.app.lib.R;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.BaseActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
 
 
 public class TestActivityWindowSoftMode extends BaseActivity {

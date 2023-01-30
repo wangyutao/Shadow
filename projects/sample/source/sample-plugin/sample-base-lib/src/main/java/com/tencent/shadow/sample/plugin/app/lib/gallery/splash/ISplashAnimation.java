@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.gallery.splash;
+package com.jpyy001.tools.sample.plugin.app.lib.gallery.splash;
 
 public interface ISplashAnimation {
 

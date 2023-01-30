@@ -16,11 +16,11 @@
  *
  */
 
-package com.tencent.shadow.test.none_dynamic.host;
+package com.jpyy001.tools.test.none_dynamic.host;
 
 import android.content.Context;
 
-import com.tencent.shadow.core.common.InstalledApk;
+import com.jpyy001.tools.core.common.TargetPackage;
 
 import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
@@ -34,13 +34,13 @@ public class PreparePluginApkBloc {
     private static final Logger mLogger = LoggerFactory.getLogger(PreparePluginApkBloc.class);
     private final String mPluginFileName;
     private boolean mPrepared = false;
-    private InstalledApk mPreparePlugin;
+    private TargetPackage mPreparePlugin;
 
     public PreparePluginApkBloc(String mPluginFileName) {
         this.mPluginFileName = mPluginFileName;
     }
 
-    InstalledApk preparePlugin(Context context) {
+    TargetPackage preparePlugin(Context context) {
         if (mPrepared) {
             return mPreparePlugin;
         }
@@ -53,7 +53,7 @@ public class PreparePluginApkBloc {
 
         copyFile(context, mPluginFileName);
 
-        InstalledApk installedPlugin = installPlugin(getApkFileInDataDir(context, mPluginFileName));
+        TargetPackage installedPlugin = installPlugin(getApkFileInDataDir(context, mPluginFileName));
         mPreparePlugin = installedPlugin;
         return installedPlugin;
     }
@@ -83,9 +83,9 @@ public class PreparePluginApkBloc {
         return new File(context.getFilesDir() + "/" + filename);
     }
 
-    private static InstalledApk installPlugin(File apk) {
+    private static TargetPackage installPlugin(File apk) {
         File[] classLoaderDirs = prepareClassLoaderDirs(apk);
-        return new InstalledApk(
+        return new TargetPackage(
                 apk.getAbsolutePath(),
                 getOdexDir(classLoaderDirs).getAbsolutePath(),
                 getLibDir(classLoaderDirs).getAbsolutePath()

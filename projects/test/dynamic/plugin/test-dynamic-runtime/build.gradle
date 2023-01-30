@@ -26,6 +26,6 @@ android {
 }
 
 dependencies {
-    implementation 'com.tencent.shadow.core:activity-container'
+    implementation 'com.jpyy001.tools.core:activity-container'
 }
 

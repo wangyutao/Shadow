@@ -1,11 +1,11 @@
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
-import com.tencent.shadow.test.plugin.general_cases.lib.gallery.util.UiUtil;
+import com.jpyy001.tools.test.plugin.general_cases.lib.gallery.util.UiUtil;
 
 public class TargetFragmentTestActivity extends Activity {
 

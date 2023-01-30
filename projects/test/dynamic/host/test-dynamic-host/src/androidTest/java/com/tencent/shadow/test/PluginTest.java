@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test;
+package com.jpyy001.tools.test;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -30,12 +30,12 @@ import androidx.test.espresso.action.ViewActions;
 import androidx.test.espresso.assertion.ViewAssertions;
 import androidx.test.espresso.matcher.ViewMatchers;
 
-import com.tencent.shadow.test.dynamic.host.HostApplication;
-import com.tencent.shadow.test.dynamic.host.JumpToPluginActivity;
-import com.tencent.shadow.test.dynamic.host.R;
-import com.tencent.shadow.test.dynamic.host.SimpleIdlingResourceImpl;
-import com.tencent.shadow.test.lib.constant.Constant;
-import com.tencent.shadow.test.lib.test_manager.TestManager;
+import com.jpyy001.tools.test.dynamic.host.HostApplication;
+import com.jpyy001.tools.test.dynamic.host.JumpToPluginActivity;
+import com.jpyy001.tools.test.dynamic.host.R;
+import com.jpyy001.tools.test.dynamic.host.SimpleIdlingResourceImpl;
+import com.jpyy001.tools.test.lib.constant.Constant;
+import com.jpyy001.tools.test.lib.test_manager.TestManager;
 
 import org.hamcrest.Matchers;
 import org.junit.After;

@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.provider;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.provider;
 
 import android.content.ContentValues;
 import android.database.ContentObserver;
@@ -29,9 +29,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tencent.shadow.sample.plugin.app.lib.R;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.BaseActivity;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.plugin.app.lib.R;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.BaseActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
 
 public class TestDBContentProviderActivity extends BaseActivity {
 

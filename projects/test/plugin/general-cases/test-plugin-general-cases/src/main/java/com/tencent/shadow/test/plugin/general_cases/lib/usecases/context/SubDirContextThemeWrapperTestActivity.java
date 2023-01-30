@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.context;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.context;
 
 import static android.os.Environment.DIRECTORY_MUSIC;
 import static android.os.Environment.DIRECTORY_PODCASTS;
@@ -30,7 +30,7 @@ import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.view.ViewGroup;
 
-import com.tencent.shadow.test.plugin.general_cases.lib.gallery.util.UiUtil;
+import com.jpyy001.tools.test.plugin.general_cases.lib.gallery.util.UiUtil;
 
 import java.io.File;
 import java.io.FileNotFoundException;

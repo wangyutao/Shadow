@@ -16,16 +16,16 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.host_communication;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.host_communication;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.tencent.shadow.sample.host.lib.HostUiLayerProvider;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.BaseActivity;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.host.lib.HostUiLayerProvider;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.BaseActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
 
 public class PluginUseHostClassActivity extends BaseActivity {
     public static class Case extends UseCase {

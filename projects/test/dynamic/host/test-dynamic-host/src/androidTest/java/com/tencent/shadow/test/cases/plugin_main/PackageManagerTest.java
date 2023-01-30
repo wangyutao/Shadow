@@ -1,10 +1,10 @@
-package com.tencent.shadow.test.cases.plugin_main;
+package com.jpyy001.tools.test.cases.plugin_main;
 
 import android.content.Intent;
 
 import androidx.test.core.app.ApplicationProvider;
 
-import com.tencent.shadow.test.lib.test_manager.TestManager;
+import com.jpyy001.tools.test.lib.test_manager.TestManager;
 
 import org.junit.Test;
 
@@ -16,14 +16,14 @@ public class PackageManagerTest extends PluginMainAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         pluginIntent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.packagemanager.TestPackageManagerActivity"
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.packagemanager.TestPackageManagerActivity"
         );
         return pluginIntent;
     }
 
     @Test
     public void testGetApplicationInfoClassName() {
-        matchTextWithViewTag("getApplicationInfo/className", "com.tencent.shadow.test.plugin.general_cases.lib.gallery.TestApplication");
+        matchTextWithViewTag("getApplicationInfo/className", "com.jpyy001.tools.test.plugin.general_cases.lib.gallery.TestApplication");
     }
 
     @Test
@@ -43,16 +43,16 @@ public class PackageManagerTest extends PluginMainAppTest {
 
     @Test
     public void testResolveActivityByExplicitIntent() {
-        matchTextWithViewTag("resolveActivity/explicit", "com.tencent.shadow.test.plugin.general_cases.lib.usecases.packagemanager.TestPackageManagerActivity");
+        matchTextWithViewTag("resolveActivity/explicit", "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.packagemanager.TestPackageManagerActivity");
     }
 
     @Test
     public void testGetServiceInfoName() {
-        matchTextWithViewTag("getServiceInfo/name", "com.tencent.shadow.test.plugin.general_cases.lib.usecases.service.TestService");
+        matchTextWithViewTag("getServiceInfo/name", "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.service.TestService");
     }
 
     @Test
     public void testGetServiceInfoPackageName() {
-        matchTextWithViewTag("getServiceInfo/packageName", "com.tencent.shadow.test.hostapp");
+        matchTextWithViewTag("getServiceInfo/packageName", "com.jpyy001.tools.test.hostapp");
     }
 }

@@ -5,8 +5,8 @@ apply plugin: 'kotlin'
 gradlePlugin {
     plugins {
         shadow {
-            id = "com.tencent.shadow.plugin"
-            implementationClass = "com.tencent.shadow.core.gradle.ShadowPlugin"
+            id = "com.jpyy001.tools.plugin"
+            implementationClass = "com.jpyy001.tools.core.gradle.ShadowPlugin"
         }
     }
 }

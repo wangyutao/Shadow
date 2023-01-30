@@ -1,4 +1,4 @@
-package com.tencent.shadow.sample.plugin.app.lib.usecases.fragment;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.fragment;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.TextView;
 
-import com.tencent.shadow.sample.plugin.app.lib.R;
+import com.jpyy001.tools.sample.plugin.app.lib.R;
 
 public class TestDialogFragment extends DialogFragment {
 

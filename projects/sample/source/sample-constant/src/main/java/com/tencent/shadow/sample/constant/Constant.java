@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.constant;
+package com.jpyy001.tools.sample.constant;
 
 final public class Constant {
     public static final String KEY_PLUGIN_ZIP_PATH = "pluginZipPath";

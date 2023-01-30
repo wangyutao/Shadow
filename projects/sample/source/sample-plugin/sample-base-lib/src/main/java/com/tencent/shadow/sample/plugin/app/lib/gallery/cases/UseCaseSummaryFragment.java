@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.gallery.cases;
+package com.jpyy001.tools.sample.plugin.app.lib.gallery.cases;
 
 import android.app.ActivityOptions;
 import android.app.Fragment;
@@ -31,9 +31,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.tencent.shadow.sample.plugin.app.lib.base.R;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.util.PluginChecker;
+import com.jpyy001.tools.sample.plugin.app.lib.base.R;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.util.PluginChecker;
 
 public class UseCaseSummaryFragment extends Fragment {
 

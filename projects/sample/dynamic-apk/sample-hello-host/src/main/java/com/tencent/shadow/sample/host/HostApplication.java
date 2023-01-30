@@ -16,14 +16,14 @@
  *
  */
 
-package com.tencent.shadow.sample.host;
+package com.jpyy001.tools.sample.host;
 
 import android.app.Application;
 import android.os.Build;
 import android.os.StrictMode;
 import android.webkit.WebView;
 
-import com.tencent.shadow.core.common.LoggerFactory;
+import com.jpyy001.tools.core.common.LoggerFactory;
 
 public class HostApplication extends Application {
 

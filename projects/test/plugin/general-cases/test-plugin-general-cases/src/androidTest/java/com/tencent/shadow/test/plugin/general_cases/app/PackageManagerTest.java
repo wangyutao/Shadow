@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.plugin.general_cases.app;
+package com.jpyy001.tools.test.plugin.general_cases.app;
 
 import android.content.Intent;
 
@@ -19,14 +19,14 @@ public class PackageManagerTest extends NormalAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         intent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.packagemanager.TestPackageManagerActivity"
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.packagemanager.TestPackageManagerActivity"
         );
         ActivityScenario.launch(intent);
     }
 
     @Test
     public void testGetApplicationInfoClassName() {
-        matchTextWithViewTag("getApplicationInfo/className", "com.tencent.shadow.test.plugin.general_cases.lib.gallery.TestApplication");
+        matchTextWithViewTag("getApplicationInfo/className", "com.jpyy001.tools.test.plugin.general_cases.lib.gallery.TestApplication");
     }
 
     @Test
@@ -42,12 +42,12 @@ public class PackageManagerTest extends NormalAppTest {
 
     @Test
     public void testGetActivityInfoName() {
-        matchTextWithViewTag("getActivityInfo/name", "com.tencent.shadow.test.plugin.general_cases.lib.usecases.packagemanager.TestPackageManagerActivity");
+        matchTextWithViewTag("getActivityInfo/name", "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.packagemanager.TestPackageManagerActivity");
     }
 
     @Test
     public void testGetActivityInfoPackageName() {
-        matchTextWithViewTag("getActivityInfo/packageName", "com.tencent.shadow.test.hostapp");
+        matchTextWithViewTag("getActivityInfo/packageName", "com.jpyy001.tools.test.hostapp");
     }
 
     @Test
@@ -67,6 +67,6 @@ public class PackageManagerTest extends NormalAppTest {
 
     @Test
     public void testResolveActivityByExplicitIntent() {
-        matchTextWithViewTag("resolveActivity/explicit", "com.tencent.shadow.test.plugin.general_cases.lib.usecases.packagemanager.TestPackageManagerActivity");
+        matchTextWithViewTag("resolveActivity/explicit", "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.packagemanager.TestPackageManagerActivity");
     }
 }

@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_androidx;
+package com.jpyy001.tools.test.cases.plugin_androidx;
 
 import android.content.Intent;
 
@@ -38,7 +38,7 @@ public class AppCompatActivityTest extends PluginAndroidxAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         pluginIntent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.androidx_cases.lib.AppCompatTestActivity"
+                "com.jpyy001.tools.test.plugin.androidx_cases.lib.AppCompatTestActivity"
         );
         return pluginIntent;
     }

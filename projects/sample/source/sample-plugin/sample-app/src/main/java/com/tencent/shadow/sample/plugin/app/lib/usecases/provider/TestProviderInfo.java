@@ -16,13 +16,13 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.provider;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.provider;
 
 import android.content.ContentUris;
 import android.net.Uri;
 import android.provider.BaseColumns;
 
-import com.tencent.shadow.sample.plugin.app.lib.BuildConfig;
+import com.jpyy001.tools.sample.plugin.app.lib.BuildConfig;
 
 
 public class TestProviderInfo {

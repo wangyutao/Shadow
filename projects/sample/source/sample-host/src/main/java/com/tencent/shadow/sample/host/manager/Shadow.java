@@ -16,10 +16,10 @@
  *
  */
 
-package com.tencent.shadow.sample.host.manager;
+package com.jpyy001.tools.sample.host.manager;
 
-import com.tencent.shadow.dynamic.host.DynamicPluginManager;
-import com.tencent.shadow.dynamic.host.PluginManager;
+import com.jpyy001.tools.dynamic.host.DynamicPluginManager;
+import com.jpyy001.tools.dynamic.host.PluginManager;
 
 import java.io.File;
 

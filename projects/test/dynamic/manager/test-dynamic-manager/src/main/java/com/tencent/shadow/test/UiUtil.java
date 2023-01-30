@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test;
+package com.jpyy001.tools.test;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

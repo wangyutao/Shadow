@@ -1,14 +1,14 @@
-package com.tencent.shadow.sample.loader;
+package com.jpyy001.tools.sample.loader;
 
 import android.content.Context;
 
-import com.tencent.shadow.core.loader.ShadowPluginLoader;
-import com.tencent.shadow.core.loader.managers.ComponentManager;
-import com.tencent.shadow.sample.loader.SampleComponentManager;
+import com.jpyy001.tools.core.loader.ShadowPluginLoader;
+import com.jpyy001.tools.core.loader.managers.ComponentManager;
+import com.jpyy001.tools.sample.loader.SampleComponentManager;
 
 /**
  * 这里的类名和包名需要固定
- * com.tencent.shadow.sdk.pluginloader.PluginLoaderImpl
+ * com.jpyy001.tools.sdk.pluginloader.PluginLoaderImpl
  */
 public class SamplePluginLoader extends ShadowPluginLoader {
 

@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.host;
+package com.jpyy001.tools.sample.host;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -25,8 +25,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.tencent.shadow.sample.api.hello.IHelloWorld;
-import com.tencent.shadow.sample.host.api.HelloWorldApiHolder;
+import com.jpyy001.tools.sample.api.hello.IHelloWorld;
+import com.jpyy001.tools.sample.host.api.HelloWorldApiHolder;
 
 public class MainActivity extends Activity {
 

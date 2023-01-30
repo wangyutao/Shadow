@@ -1,5 +1,5 @@
 // IMyAidlInterface.aidl
-package com.tencent.shadow.sample.plugin;
+package com.jpyy001.tools.sample.plugin;
 
 // Declare any non-default types here with import statements
 

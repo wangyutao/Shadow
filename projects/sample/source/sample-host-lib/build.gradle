@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.tencent.shadow.internal.aar-to-jar'
+apply plugin: 'com.jpyy001.tools.internal.aar-to-jar'
 
 android {
     compileSdkVersion project.COMPILE_SDK_VERSION

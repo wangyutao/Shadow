@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_main;
+package com.jpyy001.tools.test.cases.plugin_main;
 
 import android.content.Intent;
 
@@ -36,7 +36,7 @@ public class NullRefInXmlTest extends PluginMainAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         pluginIntent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.view.TestNullRefInXmlActivity"
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.view.TestNullRefInXmlActivity"
         );
         return pluginIntent;
     }

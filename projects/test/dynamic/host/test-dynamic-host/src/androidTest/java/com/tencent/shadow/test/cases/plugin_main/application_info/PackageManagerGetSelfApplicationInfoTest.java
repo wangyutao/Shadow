@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.cases.plugin_main.application_info;
+package com.jpyy001.tools.test.cases.plugin_main.application_info;
 
 /**
  * 在插件中通过PackageManager.getApplicationInfo()获取插件自己的ApplicationInfo测试。

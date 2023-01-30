@@ -23,6 +23,6 @@
 -keep class org.slf4j.**{*;}
 -dontwarn org.slf4j.impl.**
 
--keep class com.tencent.shadow.core.runtime.**{*;}
+-keep class com.jpyy001.tools.core.runtime.**{*;}
 
--keep class * extends com.tencent.shadow.core.runtime.container.PluginContainerActivity
+-keep class * extends com.jpyy001.tools.core.runtime.container.PluginContainerActivity

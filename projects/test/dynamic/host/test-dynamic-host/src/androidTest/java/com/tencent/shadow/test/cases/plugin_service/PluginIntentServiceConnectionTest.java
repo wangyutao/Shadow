@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.cases.plugin_service;
+package com.jpyy001.tools.test.cases.plugin_service;
 
 import android.content.Intent;
 
@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
 @RunWith(AndroidJUnit4.class)
 public class PluginIntentServiceConnectionTest extends PluginServiceAppTest {
     private static final String ServiceClassName =
-            "com.tencent.shadow.test.plugin.particular_cases.plugin_service_for_host.SystemExitIntentService";
+            "com.jpyy001.tools.test.plugin.particular_cases.plugin_service_for_host.SystemExitIntentService";
 
     private String packageName;
 

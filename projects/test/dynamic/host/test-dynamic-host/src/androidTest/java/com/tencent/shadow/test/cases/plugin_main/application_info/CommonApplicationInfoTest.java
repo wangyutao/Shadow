@@ -1,11 +1,11 @@
-package com.tencent.shadow.test.cases.plugin_main.application_info;
+package com.jpyy001.tools.test.cases.plugin_main.application_info;
 
 import android.content.Intent;
 
 import androidx.test.core.app.ApplicationProvider;
 
-import com.tencent.shadow.test.cases.plugin_main.PluginMainAppTest;
-import com.tencent.shadow.test.lib.test_manager.TestManager;
+import com.jpyy001.tools.test.cases.plugin_main.PluginMainAppTest;
+import com.jpyy001.tools.test.lib.test_manager.TestManager;
 
 import org.junit.Test;
 
@@ -20,7 +20,7 @@ abstract class CommonApplicationInfoTest extends PluginMainAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         pluginIntent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.application.TestGetApplicationInfoActivity"
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.application.TestGetApplicationInfoActivity"
         );
         return pluginIntent;
     }
@@ -41,6 +41,6 @@ abstract class CommonApplicationInfoTest extends PluginMainAppTest {
     @Test
     public void testClassName() throws Exception {
         matchSubstringWithViewTag("TAG_className_" + getTag(),
-                "com.tencent.shadow.test.plugin.general_cases.lib.gallery.TestApplication");
+                "com.jpyy001.tools.test.plugin.general_cases.lib.gallery.TestApplication");
     }
 }

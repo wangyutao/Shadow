@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.tencent.shadow.test.none_dynamic.host">
+    package="com.jpyy001.tools.test.none_dynamic.host">
 
     <application
         android:allowBackup="true"
@@ -31,8 +31,8 @@
 
 
         <provider
-            android:name="com.tencent.shadow.core.runtime.container.PluginContainerContentProvider"
-            android:authorities="com.tencent.shadow.contentprovider.authority"
+            android:name="com.jpyy001.tools.core.runtime.container.PluginContainerContentProvider"
+            android:authorities="com.jpyy001.tools.contentprovider.authority"
             android:exported="true" />
     </application>
 

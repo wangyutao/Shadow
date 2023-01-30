@@ -1,15 +1,15 @@
-package com.tencent.shadow.test;
+package com.jpyy001.tools.test;
 
-import com.tencent.shadow.test.cases.plugin_androidx.AppCompatActivityTest;
-import com.tencent.shadow.test.cases.plugin_main.ThemeTest;
-import com.tencent.shadow.test.cases.plugin_main.ViewIdTest;
+import com.jpyy001.tools.test.cases.plugin_androidx.AppCompatActivityTest;
+import com.jpyy001.tools.test.cases.plugin_main.ThemeTest;
+import com.jpyy001.tools.test.cases.plugin_main.ViewIdTest;
 
 import org.junit.Ignore;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 /**
- * com.tencent.shadow.core.loader.blocs.CreateResourceBloc
+ * com.jpyy001.tools.core.loader.blocs.CreateResourceBloc
  * 改动相关测试
  */
 @RunWith(Suite.class)

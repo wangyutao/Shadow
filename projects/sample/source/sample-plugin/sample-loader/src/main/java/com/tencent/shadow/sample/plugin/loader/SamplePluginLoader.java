@@ -16,20 +16,20 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.loader;
+package com.jpyy001.tools.sample.plugin.loader;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.res.Resources;
 
-import com.tencent.shadow.core.common.InstalledApk;
-import com.tencent.shadow.core.load_parameters.LoadParameters;
-import com.tencent.shadow.core.loader.ShadowPluginLoader;
-import com.tencent.shadow.core.loader.classloaders.PluginClassLoader;
-import com.tencent.shadow.core.loader.exceptions.LoadPluginException;
-import com.tencent.shadow.core.loader.infos.PluginParts;
-import com.tencent.shadow.core.loader.managers.ComponentManager;
-import com.tencent.shadow.sample.host.lib.LoadPluginCallback;
+import com.jpyy001.tools.core.common.TargetPackage;
+import com.jpyy001.tools.core.load_parameters.LoadParameters;
+import com.jpyy001.tools.core.loader.ShadowPluginLoader;
+import com.jpyy001.tools.core.loader.classloaders.PluginClassLoader;
+import com.jpyy001.tools.core.loader.exceptions.LoadPluginException;
+import com.jpyy001.tools.core.loader.infos.PluginParts;
+import com.jpyy001.tools.core.loader.managers.ComponentManager;
+import com.jpyy001.tools.sample.host.lib.LoadPluginCallback;
 
 import java.util.concurrent.Future;
 
@@ -52,13 +52,13 @@ public class SamplePluginLoader extends ShadowPluginLoader {
     }
 
     @Override
-    public Future<?> loadPlugin(final InstalledApk installedApk) throws LoadPluginException {
-        LoadParameters loadParameters = getLoadParameters(installedApk);
+    public Future<?> loadPlugin(final TargetPackage targetPackage) throws LoadPluginException {
+        LoadParameters loadParameters = getLoadParameters(targetPackage);
         final String partKey = loadParameters.partKey;
 
         LoadPluginCallback.getCallback().beforeLoadPlugin(partKey);
 
-        final Future<?> future = super.loadPlugin(installedApk);
+        final Future<?> future = super.loadPlugin(targetPackage);
 
         getMExecutorService().submit(new Runnable() {
             @Override

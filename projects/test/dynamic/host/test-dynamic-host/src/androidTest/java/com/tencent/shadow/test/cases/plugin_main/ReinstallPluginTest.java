@@ -16,12 +16,12 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_main;
+package com.jpyy001.tools.test.cases.plugin_main;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
 
-import com.tencent.shadow.test.lib.constant.Constant;
+import com.jpyy001.tools.test.lib.constant.Constant;
 
 import org.junit.runner.RunWith;
 

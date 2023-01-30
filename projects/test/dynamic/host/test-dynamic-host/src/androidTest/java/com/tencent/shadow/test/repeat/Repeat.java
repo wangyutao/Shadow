@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.repeat;
+package com.jpyy001.tools.test.repeat;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

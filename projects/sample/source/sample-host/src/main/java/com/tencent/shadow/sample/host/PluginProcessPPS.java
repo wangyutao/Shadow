@@ -16,14 +16,14 @@
  *
  */
 
-package com.tencent.shadow.sample.host;
+package com.jpyy001.tools.sample.host;
 
 import android.content.pm.ApplicationInfo;
 import android.content.res.Resources;
 import android.util.Log;
 
-import com.tencent.shadow.dynamic.host.PluginProcessService;
-import com.tencent.shadow.sample.host.lib.LoadPluginCallback;
+import com.jpyy001.tools.dynamic.host.PluginProcessService;
+import com.jpyy001.tools.sample.host.lib.LoadPluginCallback;
 
 public class PluginProcessPPS extends PluginProcessService {
     public PluginProcessPPS() {

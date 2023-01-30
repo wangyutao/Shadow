@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.gallery;
+package com.jpyy001.tools.test.plugin.general_cases.lib.gallery;
 
 import android.app.Activity;
 import android.app.Application;
@@ -35,7 +35,7 @@ public class TestApplication extends Application {
     public boolean isOnCreate;
 
     final private TestActivityLifecycleCallbacks alc = new TestActivityLifecycleCallbacks(
-            "com.tencent.shadow.test.plugin.general_cases.lib.usecases.application.ActivityLifecycleCallbacksTestActivity");
+            "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.application.ActivityLifecycleCallbacksTestActivity");
 
     @Override
     public void onCreate() {

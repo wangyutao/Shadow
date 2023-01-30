@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.gallery;
+package com.jpyy001.tools.sample.plugin.app.lib.gallery;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;
@@ -37,11 +37,11 @@ import com.ryg.expandable.ui.PinnedHeaderExpandableListView;
 import com.ryg.expandable.ui.PinnedHeaderExpandableListView.OnHeaderUpdateListener;
 import com.ryg.expandable.ui.StickyLayout;
 import com.ryg.expandable.ui.StickyLayout.OnGiveUpTouchEventListener;
-import com.tencent.shadow.sample.plugin.app.lib.base.R;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.UseCaseManager;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.UseCaseSummaryFragment;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCaseCategory;
+import com.jpyy001.tools.sample.plugin.app.lib.base.R;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.UseCaseManager;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.UseCaseSummaryFragment;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCaseCategory;
 
 import java.util.List;
 

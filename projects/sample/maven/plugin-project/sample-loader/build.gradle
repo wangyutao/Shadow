@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.tencent.shadow.sample.loader"//applicationId不重要
+        applicationId "com.jpyy001.tools.sample.loader"//applicationId不重要
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
@@ -26,10 +26,10 @@ android {
 }
 
 dependencies {
-    implementation "com.tencent.shadow.dynamic:loader-impl:$shadow_version"
+    implementation "com.jpyy001.tools.dynamic:loader-impl:$shadow_version"
 
-    compileOnly "com.tencent.shadow.core:activity-container:$shadow_version"
-    compileOnly "com.tencent.shadow.core:common:$shadow_version"
+    compileOnly "com.jpyy001.tools.core:activity-container:$shadow_version"
+    compileOnly "com.jpyy001.tools.core:common:$shadow_version"
     //下面这行依赖是为了防止在proguard的时候找不到LoaderFactory接口
-    compileOnly "com.tencent.shadow.dynamic:host:$shadow_version"
+    compileOnly "com.jpyy001.tools.dynamic:host:$shadow_version"
 }

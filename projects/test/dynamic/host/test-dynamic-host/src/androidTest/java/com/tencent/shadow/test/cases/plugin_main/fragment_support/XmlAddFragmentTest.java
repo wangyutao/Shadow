@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.cases.plugin_main.fragment_support;
+package com.jpyy001.tools.test.cases.plugin_main.fragment_support;
 
 import android.os.Build;
 
@@ -20,12 +20,12 @@ abstract class XmlAddFragmentTest extends CommonFragmentSupportTest {
     public void inflateContext() {
         Assume.assumeTrue(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M);
         matchTextWithViewTag("InflateContextView",
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
     }
 
     @Test
     public void inflateActivity() {
         matchTextWithViewTag("InflateActivityView",
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment." + getActivityName());
     }
 }

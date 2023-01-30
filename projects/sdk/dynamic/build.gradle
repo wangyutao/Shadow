@@ -23,13 +23,13 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$build_gradle_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.tencent.shadow.coding:common-jar-settings'
+        classpath 'com.jpyy001.tools.coding:common-jar-settings'
     }
 }
 apply from: '../../../buildScripts/gradle/common.gradle'
 
 allprojects {
-    group 'com.tencent.shadow.dynamic'
+    group 'com.jpyy001.tools.dynamic'
 }
 
 tasks.create('test').dependsOn subprojects.collect { it.getTasksByName('test', false) }

@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.host.lib;
+package com.jpyy001.tools.sample.host.lib;
 
 import android.content.Context;
 import android.view.LayoutInflater;

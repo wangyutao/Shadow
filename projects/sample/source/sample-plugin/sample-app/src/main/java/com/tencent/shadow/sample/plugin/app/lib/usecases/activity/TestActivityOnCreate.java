@@ -16,15 +16,15 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.activity;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.tencent.shadow.sample.plugin.app.lib.R;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.util.ToastUtil;
+import com.jpyy001.tools.sample.plugin.app.lib.R;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.util.ToastUtil;
 
 public class TestActivityOnCreate extends Activity {
 

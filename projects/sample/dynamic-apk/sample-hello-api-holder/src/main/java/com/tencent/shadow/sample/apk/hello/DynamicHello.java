@@ -16,21 +16,21 @@
  *
  */
 
-package com.tencent.shadow.sample.apk.hello;
+package com.jpyy001.tools.sample.apk.hello;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.TextView;
 
-import com.tencent.shadow.core.common.Logger;
-import com.tencent.shadow.core.common.LoggerFactory;
-import com.tencent.shadow.sample.api.hello.IHelloWorld;
-import com.tencent.shadow.sample.api.hello.IHelloWorldImpl;
+import com.jpyy001.tools.core.common.Logger;
+import com.jpyy001.tools.core.common.LoggerFactory;
+import com.jpyy001.tools.sample.api.hello.IHelloWorld;
+import com.jpyy001.tools.sample.api.hello.IHelloWorldImpl;
 
 import java.io.File;
 
-import static com.tencent.shadow.core.utils.Md5.md5File;
+import static com.jpyy001.tools.core.utils.Md5.md5File;
 
 
 public final class DynamicHello implements IHelloWorld {

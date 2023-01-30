@@ -16,14 +16,14 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment;
 
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.tencent.shadow.test.plugin.general_cases.R;
+import com.jpyy001.tools.test.plugin.general_cases.R;
 
 public class XmlAddFragmentActivity extends Activity {
 

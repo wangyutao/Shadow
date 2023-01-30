@@ -16,14 +16,14 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_main.dialog_support;
+package com.jpyy001.tools.test.cases.plugin_main.dialog_support;
 
 import android.content.Intent;
 
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
-import com.tencent.shadow.test.cases.plugin_main.PluginMainAppTest;
+import com.jpyy001.tools.test.cases.plugin_main.PluginMainAppTest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,7 +38,7 @@ public class DialogOwnerActivityTest extends PluginMainAppTest {
         String packageName = ApplicationProvider.getApplicationContext().getPackageName();
         pluginIntent.setClassName(
                 packageName,
-                "com.tencent.shadow.test.plugin.general_cases.lib.usecases.dialog.TestDialogActivity"
+                "com.jpyy001.tools.test.plugin.general_cases.lib.usecases.dialog.TestDialogActivity"
         );
         return pluginIntent;
     }

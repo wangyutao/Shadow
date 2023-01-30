@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.usecases.dialog;
+package com.jpyy001.tools.sample.plugin.app.lib.usecases.dialog;
 
 import android.app.Dialog;
 import android.content.Context;

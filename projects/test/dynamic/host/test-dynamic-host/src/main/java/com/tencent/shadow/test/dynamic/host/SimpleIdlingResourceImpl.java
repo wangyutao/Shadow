@@ -16,11 +16,11 @@
  *
  */
 
-package com.tencent.shadow.test.dynamic.host;
+package com.jpyy001.tools.test.dynamic.host;
 
 import androidx.test.espresso.IdlingResource;
 
-import com.tencent.shadow.test.lib.test_manager.SimpleIdlingResource;
+import com.jpyy001.tools.test.lib.test_manager.SimpleIdlingResource;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

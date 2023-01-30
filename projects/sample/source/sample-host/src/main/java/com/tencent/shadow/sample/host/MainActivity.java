@@ -16,9 +16,9 @@
  *
  */
 
-package com.tencent.shadow.sample.host;
+package com.jpyy001.tools.sample.host;
 
-import static com.tencent.shadow.sample.constant.Constant.PART_KEY_PLUGIN_BASE;
+import static com.jpyy001.tools.sample.constant.Constant.PART_KEY_PLUGIN_BASE;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -30,8 +30,8 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.tencent.shadow.sample.constant.Constant;
-import com.tencent.shadow.sample.host.plugin_view.HostAddPluginViewActivity;
+import com.jpyy001.tools.sample.constant.Constant;
+import com.jpyy001.tools.sample.host.plugin_view.HostAddPluginViewActivity;
 
 
 public class MainActivity extends Activity {
@@ -80,7 +80,7 @@ public class MainActivity extends Activity {
                     //为了演示多进程多插件，其实两个插件内容完全一样，除了所在进程
                     case Constant.PART_KEY_PLUGIN_MAIN_APP:
                     case Constant.PART_KEY_PLUGIN_ANOTHER_APP:
-                        intent.putExtra(Constant.KEY_ACTIVITY_CLASSNAME, "com.tencent.shadow.sample.plugin.app.lib.gallery.splash.SplashActivity");
+                        intent.putExtra(Constant.KEY_ACTIVITY_CLASSNAME, "com.jpyy001.tools.sample.plugin.app.lib.gallery.splash.SplashActivity");
                         break;
 
                 }

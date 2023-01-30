@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.none_dynamic.host;
+package com.jpyy001.tools.test.none_dynamic.host;
 
 import android.Manifest;
 import android.app.Activity;

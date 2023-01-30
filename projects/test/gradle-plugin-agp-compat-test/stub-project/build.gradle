@@ -10,12 +10,12 @@ buildscript {
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$TestAGPVersion"
-        classpath "com.tencent.shadow.core:gradle-plugin:$ShadowVersion"
+        classpath "com.jpyy001.tools.core:gradle-plugin:$ShadowVersion"
     }
 }
 
 apply plugin: 'com.android.application'
-apply plugin: 'com.tencent.shadow.plugin'
+apply plugin: 'com.jpyy001.tools.plugin'
 
 allprojects {
     ext.COMPILE_SDK_VERSION = 29
@@ -39,7 +39,7 @@ android {
     compileSdkVersion COMPILE_SDK_VERSION
 
     defaultConfig {
-        applicationId "com.tencent.shadow.test.gradle.stub_project"
+        applicationId "com.jpyy001.tools.test.gradle.stub_project"
         minSdkVersion MIN_SDK_VERSION
         targetSdkVersion TARGET_SDK_VERSION
         versionCode VERSION_CODE
@@ -67,7 +67,7 @@ android {
 dependencies {
     //Shadow Transform后业务代码会有一部分实际引用runtime中的类
     //如果不以compileOnly方式依赖，会导致其他Transform或者Proguard找不到这些类
-    pluginCompileOnly "com.tencent.shadow.core:runtime:$ShadowVersion"
+    pluginCompileOnly "com.jpyy001.tools.core:runtime:$ShadowVersion"
 }
 
 repositories {

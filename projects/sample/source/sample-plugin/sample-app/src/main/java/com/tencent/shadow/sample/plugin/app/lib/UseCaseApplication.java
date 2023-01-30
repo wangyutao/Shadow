@@ -1,32 +1,32 @@
-package com.tencent.shadow.sample.plugin.app.lib;
+package com.jpyy001.tools.sample.plugin.app.lib;
 
-import static com.tencent.shadow.sample.plugin.app.lib.gallery.cases.UseCaseManager.useCases;
+import static com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.UseCaseManager.useCases;
 
 import android.app.Application;
 
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.UseCaseManager;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCase;
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCaseCategory;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.activity.TestActivityOnCreate;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.activity.TestActivityOptionMenu;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.activity.TestActivityOrientation;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.activity.TestActivityReCreate;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.activity.TestActivityReCreateBySystem;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.activity.TestActivitySetTheme;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.activity.TestActivityWindowSoftMode;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.context.ActivityContextSubDirTestActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.context.ApplicationContextSubDirTestActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.dialog.TestDialogActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.fragment.TestDialogFragmentActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.fragment.TestDynamicFragmentActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.fragment.TestXmlFragmentActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.host_communication.PluginUseHostClassActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.packagemanager.TestPackageManagerActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.provider.TestDBContentProviderActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.provider.TestFileProviderActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.receiver.TestDynamicReceiverActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.receiver.TestReceiverActivity;
-import com.tencent.shadow.sample.plugin.app.lib.usecases.webview.WebViewActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.UseCaseManager;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCase;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCaseCategory;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.activity.TestActivityOnCreate;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.activity.TestActivityOptionMenu;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.activity.TestActivityOrientation;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.activity.TestActivityReCreate;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.activity.TestActivityReCreateBySystem;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.activity.TestActivitySetTheme;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.activity.TestActivityWindowSoftMode;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.context.ActivityContextSubDirTestActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.context.ApplicationContextSubDirTestActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.dialog.TestDialogActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.fragment.TestDialogFragmentActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.fragment.TestDynamicFragmentActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.fragment.TestXmlFragmentActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.host_communication.PluginUseHostClassActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.packagemanager.TestPackageManagerActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.provider.TestDBContentProviderActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.provider.TestFileProviderActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.receiver.TestDynamicReceiverActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.receiver.TestReceiverActivity;
+import com.jpyy001.tools.sample.plugin.app.lib.usecases.webview.WebViewActivity;
 
 public class UseCaseApplication extends Application {
     @Override

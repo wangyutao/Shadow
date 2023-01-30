@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.packagemanager;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.packagemanager;
 
 import static android.content.pm.PackageManager.GET_META_DATA;
 
@@ -33,8 +33,8 @@ import android.content.pm.ServiceInfo;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
-import com.tencent.shadow.test.plugin.general_cases.lib.gallery.util.UiUtil;
-import com.tencent.shadow.test.plugin.general_cases.lib.usecases.service.TestService;
+import com.jpyy001.tools.test.plugin.general_cases.lib.gallery.util.UiUtil;
+import com.jpyy001.tools.test.plugin.general_cases.lib.usecases.service.TestService;
 
 import java.util.List;
 

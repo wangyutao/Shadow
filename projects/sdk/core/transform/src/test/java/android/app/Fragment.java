@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.tencent.shadow.core.runtime.ShadowActivity;
+import com.jpyy001.tools.core.runtime.ShadowActivity;
 
 /**
  * 因为在TransformManager中ActivityTransform是在FragmentSupportTransform之前进行的，

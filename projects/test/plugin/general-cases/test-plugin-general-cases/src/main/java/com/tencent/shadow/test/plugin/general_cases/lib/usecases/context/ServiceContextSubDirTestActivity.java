@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.context;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.context;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -27,8 +27,8 @@ import android.support.annotation.Nullable;
 
 import androidx.test.espresso.IdlingRegistry;
 
-import com.tencent.shadow.test.plugin.general_cases.lib.usecases.SimpleIdlingResource;
-import com.tencent.shadow.test.plugin.general_cases.lib.usecases.service.TestService;
+import com.jpyy001.tools.test.plugin.general_cases.lib.usecases.SimpleIdlingResource;
+import com.jpyy001.tools.test.plugin.general_cases.lib.usecases.service.TestService;
 
 public class ServiceContextSubDirTestActivity extends SubDirContextThemeWrapperTestActivity {
 

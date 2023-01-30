@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.dialog;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.dialog;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,7 +25,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.ViewGroup;
 
-import com.tencent.shadow.test.plugin.general_cases.lib.gallery.util.UiUtil;
+import com.jpyy001.tools.test.plugin.general_cases.lib.gallery.util.UiUtil;
 
 public class TestDialogActivity extends Activity {
 

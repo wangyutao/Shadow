@@ -16,10 +16,10 @@
  *
  */
 
-package com.tencent.shadow.test.cases.plugin_main;
+package com.jpyy001.tools.test.cases.plugin_main;
 
-import com.tencent.shadow.test.PluginTest;
-import com.tencent.shadow.test.lib.constant.Constant;
+import com.jpyy001.tools.test.PluginTest;
+import com.jpyy001.tools.test.lib.constant.Constant;
 
 public abstract class PluginMainAppTest extends PluginTest {
 

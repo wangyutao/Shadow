@@ -16,10 +16,10 @@
  *
  */
 
-package com.tencent.shadow.test.none_dynamic.host;
+package com.jpyy001.tools.test.none_dynamic.host;
 
-import com.tencent.shadow.core.common.ILoggerFactory;
-import com.tencent.shadow.core.common.Logger;
+import com.jpyy001.tools.core.common.ILoggerFactory;
+import com.jpyy001.tools.core.common.Logger;
 
 import org.slf4j.LoggerFactory;
 

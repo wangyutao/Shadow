@@ -1,4 +1,4 @@
-package com.tencent.shadow.sample.host;
+package com.jpyy001.tools.sample.host;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,9 +7,9 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.tencent.shadow.dynamic.host.EnterCallback;
-import com.tencent.shadow.dynamic.host.PluginManager;
-import com.tencent.shadow.sample.introduce_shadow_lib.InitApplication;
+import com.jpyy001.tools.dynamic.host.EnterCallback;
+import com.jpyy001.tools.dynamic.host.PluginManager;
+import com.jpyy001.tools.sample.introduce_shadow_lib.InitApplication;
 
 public class MainActivity extends Activity {
 

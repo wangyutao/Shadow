@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.fragment;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -19,7 +19,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.tencent.shadow.test.plugin.general_cases.R;
+import com.jpyy001.tools.test.plugin.general_cases.R;
 
 @SuppressLint("SetTextI18n")
 class TestFragmentCommonLogic {

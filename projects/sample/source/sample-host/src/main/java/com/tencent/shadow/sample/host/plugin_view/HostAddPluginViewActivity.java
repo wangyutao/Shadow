@@ -1,4 +1,4 @@
-package com.tencent.shadow.sample.host.plugin_view;
+package com.jpyy001.tools.sample.host.plugin_view;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.tencent.shadow.sample.host.lib.HostAddPluginViewContainer;
-import com.tencent.shadow.sample.host.lib.HostAddPluginViewContainerHolder;
+import com.jpyy001.tools.sample.host.lib.HostAddPluginViewContainer;
+import com.jpyy001.tools.sample.host.lib.HostAddPluginViewContainerHolder;
 
 public class HostAddPluginViewActivity extends Activity implements HostAddPluginViewContainer {
     private ViewGroup mPluginViewContainer;

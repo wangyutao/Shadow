@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.test.lib.plugin_use_host_code_lib.other;
+package com.jpyy001.tools.test.lib.plugin_use_host_code_lib.other;
 
 public class HostOtherInterface {
 

@@ -1,4 +1,4 @@
-package com.tencent.shadow.sample.manager;
+package com.jpyy001.tools.sample.manager;
 
 import android.app.Service;
 import android.content.ComponentName;
@@ -9,10 +9,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.tencent.shadow.core.manager.installplugin.InstalledPlugin;
-import com.tencent.shadow.dynamic.host.EnterCallback;
-import com.tencent.shadow.dynamic.loader.PluginServiceConnection;
-import com.tencent.shadow.sample.plugin.IMyAidlInterface;
+import com.jpyy001.tools.core.manager.installplugin.InstalledPlugin;
+import com.jpyy001.tools.dynamic.host.EnterCallback;
+import com.jpyy001.tools.dynamic.loader.PluginServiceConnection;
+import com.jpyy001.tools.sample.plugin.IMyAidlInterface;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -42,7 +42,7 @@ public class SamplePluginManager extends FastPluginManager {
      */
     @Override
     protected String getPluginProcessServiceName() {
-        return "com.tencent.shadow.sample.introduce_shadow_lib.MainPluginProcessService";
+        return "com.jpyy001.tools.sample.introduce_shadow_lib.MainPluginProcessService";
     }
 
     @Override
@@ -50,7 +50,7 @@ public class SamplePluginManager extends FastPluginManager {
         if (fromId == Constant.FROM_ID_START_ACTIVITY) {
             bundle.putString(Constant.KEY_PLUGIN_ZIP_PATH, "/data/local/tmp/plugin-debug.zip");
             bundle.putString(Constant.KEY_PLUGIN_PART_KEY, "sample-plugin");
-            bundle.putString(Constant.KEY_ACTIVITY_CLASSNAME, "com.tencent.shadow.sample.plugin.MainActivity");
+            bundle.putString(Constant.KEY_ACTIVITY_CLASSNAME, "com.jpyy001.tools.sample.plugin.MainActivity");
             onStartActivity(context, bundle, callback);
         } else if (fromId == Constant.FROM_ID_CALL_SERVICE) {
             callPluginService(context);
@@ -109,7 +109,7 @@ public class SamplePluginManager extends FastPluginManager {
     private void callPluginService(final Context context) {
         final String pluginZipPath = "/data/local/tmp/plugin-debug.zip";
         final String partKey = "sample-plugin";
-        final String className = "com.tencent.shadow.sample.plugin.MyService";
+        final String className = "com.jpyy001.tools.sample.plugin.MyService";
 
         Intent pluginIntent = new Intent();
         pluginIntent.setClassName(context.getPackageName(), className);

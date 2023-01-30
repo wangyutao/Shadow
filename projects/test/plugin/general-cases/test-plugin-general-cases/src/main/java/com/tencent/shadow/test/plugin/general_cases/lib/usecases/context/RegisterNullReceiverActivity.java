@@ -1,4 +1,4 @@
-package com.tencent.shadow.test.plugin.general_cases.lib.usecases.context;
+package com.jpyy001.tools.test.plugin.general_cases.lib.usecases.context;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.view.ViewGroup;
 
-import com.tencent.shadow.test.plugin.general_cases.lib.gallery.util.UiUtil;
+import com.jpyy001.tools.test.plugin.general_cases.lib.gallery.util.UiUtil;
 
 import java.util.Arrays;
 

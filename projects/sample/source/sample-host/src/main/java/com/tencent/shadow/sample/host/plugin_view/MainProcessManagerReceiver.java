@@ -1,11 +1,11 @@
-package com.tencent.shadow.sample.host.plugin_view;
+package com.jpyy001.tools.sample.host.plugin_view;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.tencent.shadow.sample.constant.Constant;
-import com.tencent.shadow.sample.host.HostApplication;
+import com.jpyy001.tools.sample.constant.Constant;
+import com.jpyy001.tools.sample.host.HostApplication;
 
 public class MainProcessManagerReceiver extends BroadcastReceiver {
     @Override

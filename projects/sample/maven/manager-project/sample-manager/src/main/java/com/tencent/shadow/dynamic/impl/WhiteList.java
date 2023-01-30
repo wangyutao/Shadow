@@ -1,4 +1,4 @@
-package com.tencent.shadow.dynamic.impl;
+package com.jpyy001.tools.dynamic.impl;
 
 /**
  * 此类包名及类名固定

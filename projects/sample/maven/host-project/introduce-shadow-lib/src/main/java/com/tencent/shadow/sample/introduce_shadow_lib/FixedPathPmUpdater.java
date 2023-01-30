@@ -1,6 +1,6 @@
-package com.tencent.shadow.sample.introduce_shadow_lib;
+package com.jpyy001.tools.sample.introduce_shadow_lib;
 
-import com.tencent.shadow.dynamic.host.PluginManagerUpdater;
+import com.jpyy001.tools.dynamic.host.PluginManagerUpdater;
 
 import java.io.File;
 import java.util.concurrent.Future;

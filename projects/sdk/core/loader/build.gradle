@@ -1,14 +1,14 @@
-import com.tencent.shadow.coding.code_generator.ActivityCodeGenerator
-import com.tencent.shadow.coding.common_jar_settings.AndroidJar
+import com.jpyy001.tools.coding.code_generator.ActivityCodeGenerator
+import com.jpyy001.tools.coding.common_jar_settings.AndroidJar
 
 buildscript {
     dependencies {
-        classpath 'com.tencent.shadow.coding:android-jar'
-        classpath 'com.tencent.shadow.coding:code-generator'
+        classpath 'com.jpyy001.tools.coding:android-jar'
+        classpath 'com.jpyy001.tools.coding:code-generator'
     }
 }
 
-apply plugin: 'com.tencent.shadow.internal.common-jar-settings'
+apply plugin: 'com.jpyy001.tools.internal.common-jar-settings'
 
 apply plugin: 'kotlin'
 
@@ -33,7 +33,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     testImplementation "junit:junit:$junit_version"
 
-    implementation 'com.tencent.shadow.coding:java-build-config'
+    implementation 'com.jpyy001.tools.coding:java-build-config'
     api project(':runtime')
     compileOnly project(':activity-container')
     compileOnly project(':common')

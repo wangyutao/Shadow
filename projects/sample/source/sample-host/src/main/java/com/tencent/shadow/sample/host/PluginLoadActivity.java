@@ -16,7 +16,7 @@
  *
  */
 
-package com.tencent.shadow.sample.host;
+package com.jpyy001.tools.sample.host;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -24,8 +24,8 @@ import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.tencent.shadow.dynamic.host.EnterCallback;
-import com.tencent.shadow.sample.constant.Constant;
+import com.jpyy001.tools.dynamic.host.EnterCallback;
+import com.jpyy001.tools.sample.constant.Constant;
 
 
 public class PluginLoadActivity extends Activity {

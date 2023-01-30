@@ -16,9 +16,9 @@
  *
  */
 
-package com.tencent.shadow.sample.plugin.app.lib.gallery.cases;
+package com.jpyy001.tools.sample.plugin.app.lib.gallery.cases;
 
-import com.tencent.shadow.sample.plugin.app.lib.gallery.cases.entity.UseCaseCategory;
+import com.jpyy001.tools.sample.plugin.app.lib.gallery.cases.entity.UseCaseCategory;
 
 import java.util.ArrayList;
 import java.util.List;
